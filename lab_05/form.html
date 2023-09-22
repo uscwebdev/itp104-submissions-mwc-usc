@@ -1,0 +1,177 @@
+<DOCTYPE html!>
+<html>
+<head>
+    <title>Club Interest Form</title>
+    <style>
+        #header
+        {
+            font-size: 1.5em;
+			text-align: center;
+            margin: 0px;
+            
+			height: 300px;
+			line-height: 300px;
+        }
+
+        #main-wrapper
+        {
+            background-image: url('img/background.jpg');
+			background-size: cover;
+			background-position: center;
+
+            width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+
+            padding: 15px;
+            border: 5px solid black;
+        }
+        .form-row
+        {
+			display: flex;
+			margin: 10px 0px;
+		}
+
+		.left-col
+        {
+			width: 400px;
+		}
+
+        .spacer
+        {
+            width: 100px;
+        }
+
+        .visibility
+        {
+            color: white;
+			text-shadow: 0px 0px 3px #000;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div id="header">
+		<h1>Cubing Club Interest Form</h1>
+	</div> <!-- #header -->
+
+    <div id="main-wrapper", class="visibility">
+    <h2>Sign Up Here!</h2>
+
+    <form action="confirmation.html">
+        <div class="form-row">
+            <div class="left-col">
+                <label for="fName-id">First Name:</label>
+            </div>
+            <input type="text" id="fName-id">
+        </div>
+
+        <div class="form-row">
+            <div class="left-col">
+                <label for="lName-id">Last Name:</label>
+            </div>
+            <input type="text" id="lName-id">
+        </div>
+
+        <div class="form-row">
+            <div class="left-col">
+                <label for="email-id">Email:</label>
+            </div>
+            <input type="email" id="email-id">
+        </div>
+
+        <div class="form-row">
+            <div class="left-col">
+                <label for="phone-id">Phone:</label>
+            </div>
+            <input type="tel" id="phone-id">
+        </div>
+
+        <div class="form-row">
+            <div class = "left-col">Are you a current student?</div>
+            
+            <div class="visibility">
+            <label>
+                <input type="radio" name="student">
+                Yes
+            </label>
+
+            <label> 
+                <input type="radio" name="student">
+                No
+            </label>
+
+            <label> 
+                <input type="radio" name="student">
+                Other
+            </label>
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class = "left-col">
+                <label for="role-msg">If you selected other, specify your role and relevance:</label>
+            </div>
+            <textarea id="role-msg" placeholder="Ex. former student, instructor, etc."></textarea>
+        </div>
+
+        <div class="form-row">
+            <div class="left-col">
+            Email Subscriptions:
+            </div>
+
+            <div class="visibility">
+            <label>
+                <input type="checkbox">
+                Meetings
+            </label>
+
+            <label>
+                <input type="checkbox">
+                Events
+            </label>
+
+            <label>
+                <input type="checkbox">
+                Board Apps
+            </label>
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="left-col">
+            <label for="exp-id">
+            Experience Level:
+            </label>
+            </div>
+
+            <select id="exp-id">
+                <option>--- Select Exp. Level ---</option>
+                <option>Not Experienced / Beginner</option>
+                <option>Casual Speedcuber</option>
+                <option>Expert</option>
+            </select>
+        </div>
+
+        <div class="form-row">
+            <div class="left-col">
+            <label for="msg-id">Send a Message!</label>
+            </div>
+
+            <textarea id="msg-id" placeholder="What is speedcubing..."></textarea>
+        </div>
+
+        <div class="form-row">
+            <div class="spacer">
+            <button type="submit">Submit Form</button>
+            </div>
+            <button type="reset">Clear Form</button>
+        </div>
+
+    </form>
+    <!-- confirmation.html-->
+    </div>
+    <!-- #main-wrapper-->
+</body>
+</html>
