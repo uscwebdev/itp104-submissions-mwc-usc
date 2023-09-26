@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Calendar | Michael Chen</title>
+
+    <style>
+    table
+    {
+        border-collapse: collapse;
+        width: 1000px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    th
+    {
+        border: 1px solid #CCC;
+        text-align: center;
+        width: 140px;
+        padding: 10px 0px;
+
+        /*rounded down to 140 to make sure the tables fit
+        */
+    }
+
+    td{
+        border: 1px solid #CCC;
+        vertical-align: text-top;
+        width: 140px;
+        height: 70px;
+        padding: 5px 5px;
+    }
+
+    #month-header
+    {
+        background-image: url(img/month-header.jpg);
+        background-size: cover;
+        color:#FFF;
+        font-size: 1.5em;
+        text-align: center;
+        text-shadow: 0px 0px 10px #000;
+    }
+
+    #birthday-bkg
+    {
+        background-image: url(img/birthday.jpg);
+        background-size: cover;
+        color:lightyellow;
+        text-shadow: 0px 0px 5px #000;
+    }
+
+    #birthday-txt
+    {
+        color:lightyellow;
+        font-size: 1.3em;
+        text-align: center;
+        text-shadow: 0px 0px 10px #000;
+    }
+
+    #laborday-bkg
+    {
+        background-image: url(img/laborday.webp);
+        background-size: cover;
+        color:crimson;
+        text-shadow: 0px 0px 5px #FFF;
+    }
+
+    #laborday-txt
+    {
+        color:crimson;
+        font-size: 1.3em;
+        text-align: center;
+        text-shadow: 0px 0px 10px #FFF;
+    }
+
+    #yomkippur-bkg
+    {
+        background-image: url(img/yomkippur.jpg);
+        background-size: cover;
+        color:aqua;
+        text-shadow: 0px 0px 5px #000;
+    }
+
+    #yomkippur-txt
+    {
+        color:aqua;
+        font-size: 1.3em;
+        text-align: center;
+        text-shadow: 0px 0px 10px #000;
+    }
+
+
+    .empty
+    {
+        background-color:aliceblue;
+    }
+
+    .dayoftheweek
+    {
+        background-color: blanchedalmond;
+    }
+
+    </style>
+    </head>
+
+    <body>
+        <table>
+            <tr>
+                <th colspan="7" id="month-header"><h1>September 2023</h1></th>
+            </tr>
+
+			<tr>
+				<th class="dayoftheweek">Sunday</th>
+				<th class="dayoftheweek">Monday</th>
+				<th class="dayoftheweek">Tuesday</th>
+				<th class="dayoftheweek">Wednesday</th>
+                <th class="dayoftheweek">Thursday</th>
+                <th class="dayoftheweek">Friday</th>
+                <th class="dayoftheweek">Saturday</th>
+			</tr>
+
+			<tr>
+				<td class="empty">27</td>
+				<td class="empty">28</td>
+				<td class="empty">29</td>
+				<td class="empty">30</td>
+                <td class="empty">31</td>
+                <td>1</td>
+                <td>2</td>
+			</tr>
+
+			<tr>
+				<td>3</td>
+				<td id="laborday-bkg">4
+                    <div id="laborday-txt">Labor Day</div>
+                </td>
+				<td>5</td>
+                <td>6</td>
+                <td>7</td>
+                <td>8</td>
+				<td>9</td>
+			</tr>
+
+            <tr>
+                <td>10</td>
+                <td>11</td>
+                <td>12</td>
+                <td>13</td>
+                <td>14</td>
+                <td>15</td>
+                <td>16</td>
+            </tr>
+
+            <tr>
+                <td>17</td>
+                <td>18</td>
+                <td>19</td>
+                <td>20</td>
+                <td>21</td>
+                <td id="birthday-bkg"> 22
+                    <div id="birthday-txt">It's My B-day!</div>
+                </td>
+                <td>23</td>
+            </tr>
+
+            <tr>
+                <td>24</td>
+                <td id="yomkippur-bkg">25
+                    <div id="yomkippur-txt">Yom Kippur</div>
+                </td>
+                <td>26</td>
+                <td>27</td>
+                <td>28</td>
+                <td>29</td>
+                <td>30</td>
+            </tr>
+		</table>
+    </body>
+</html>
