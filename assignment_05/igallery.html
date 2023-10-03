@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Michael Chen | Cubing Gallery</title>
+
+	<link rel="stylesheet" href="main.css">
+
+	<style>
+		#header {
+			background-image: url("img/gallery-bkg.webp"); 
+			background-size: contain;
+			color:rgb(255, 221, 0);
+			font-size: 3em;
+			text-shadow: 0px 0px 10px   #000;
+			height: 200px;
+			text-align: center;
+			line-height: 200px;
+		}
+
+		#gallerybox {
+			display: flex;
+			background-color: aliceblue;
+			width: 1000px;
+			margin-left: auto;
+			margin-right: auto;
+			flex-wrap: wrap;
+		}
+
+		#container {
+			display: flex;
+			background-color: aliceblue;
+			width: 750px;
+			height: auto;
+			margin-left: auto;
+			margin-right: auto;
+			flex-wrap: wrap;
+		}
+
+		#verticalcontainer {
+			display: flex;
+			background-color: aliceblue;
+			width: 250px;
+			height: auto;
+			margin-left: auto;
+			margin-right: auto;
+			flex-wrap: wrap;
+		}
+
+		.subbox0 {
+			/*75%*/
+			display:flex;
+			width: 720px;
+			padding: 15px;
+			flex-wrap: wrap;
+		}
+
+		.subbox1 {
+			/*half*/
+			display:flex;
+			width: 470px;
+			padding: 15px;
+			flex-wrap: wrap;
+		}
+
+		.subbox2 {
+			/*quarter*/
+			display:flex;
+			width: 220px;
+			padding: 15px;
+			flex-wrap: wrap;
+		}
+	</style>
+
+</head>
+<body>
+
+	<div id="header">
+		<h1>Gallery</h1>
+	</div> <!-- #header -->
+
+	<div id="navbar">
+		<a href="interests.html">Home</a>
+		<a id="highlight-nav" href="igallery.html">Gallery</a>
+	</div>
+
+	<div id="gallerybox">
+		<div>
+			<img class="subbox2" src="img/image 2.jpg" alt="Collection of cubes">
+		</div>
+
+		<div>
+			<img class="subbox2" src="img/image 1.jpg" alt="The Creator Erno Rubik">
+		</div>
+
+		<div>
+			<img class="subbox2" src="img/image 3.png" alt="Competition Setting">
+		</div>
+
+		<div>
+			<img class="subbox2" src="img/image 4.avif" alt="Max Park, WR Holder">
+		</div>
+
+		<div id="container">
+			<img class="subbox0" src="img/image 10.jpg" alt="Teen from Natick, Local Even Organizer">
+		</div>
+
+		<div id="verticalcontainer">
+			<img class="subbox2" src="img/image 6.jpg" alt="OLL Skip">
+			<img class="subbox2" src="img/image 7.jpg" alt="The Action">
+			<img class="subbox2" src="img/image 9.jpg" alt="Cube Bag and Lubricant">
+			<img class="subbox2" src="img/image 8.jpg" alt="Blind Solver">
+			
+		</div>
+
+		<div>
+			<img class="subbox1" src="img/image 5.png" alt="image 5">
+		</div>
+
+		<div>
+			<img class="subbox1" src="img/image 11.webp" alt="image 11">
+		</div>
+	</div>
+
+	<div id="footer">@Michael Chen; 2023 - *Some text may be derived from ChatGPT*</div>
+	<!-- #footer -->
+
+</body>
+</html>

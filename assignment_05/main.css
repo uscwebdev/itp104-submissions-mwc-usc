@@ -1,0 +1,109 @@
+body
+{
+    background-color: skyblue;
+    margin: 0px;
+}
+
+h1
+{
+    margin: 0px
+}
+
+h2
+{
+    color:dodgerblue;
+    font-size: 1.8em; 
+}
+
+hr
+{
+    border: 3px solid dodgerblue;
+}
+
+#body-content
+{
+    display: flex;
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#main-content
+{
+    background-color:aliceblue;
+    width: 660px;
+    padding: 15px;
+}
+
+#img-content
+{
+    background-color:antiquewhite;
+
+    text-align: center;
+
+    width: 360px;
+    padding: 15px;
+}
+
+#footer
+{
+    background-color: #FECB3E;
+    text-align: center;
+
+    color: #FFF;
+    height: 40px;
+    line-height: 40px;
+}
+
+.image-block
+{
+    margin-top: 200px;
+    margin-bottom: 200px;
+}
+
+.image-block > p {
+    text-align: center;
+    /* display: none; */
+    visibility: hidden;
+}
+
+.subheaders
+{
+    color: dodgerblue;
+    font-weight: bold;
+    font-size: 1.3em;   
+}
+
+.subcaptions
+{
+    color:dodgerblue;
+    font-weight: bold; 
+    font-size: 1.15em; 
+}
+
+#navbar a {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    font-size: 2.2em;
+    text-shadow: 0px 0px 3px darkgoldenrod;
+    display:block;
+    width:500px;
+    height: 50px;
+    line-height: 50px;
+    border-bottom: 5px solid skyblue;
+    color:rgb(212, 179, 94);
+}
+
+#navbar {
+    display:flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+#navbar a:hover, #navbar #highlight-nav {
+    color: #FECB3E;
+    border-bottom: 5px solid #FECB3E;
+    /*adding alone will make the page shift since its adds a border to the antire page
+    need the compound selector with #navbar to override the navbar a with the color and border*/
+}
