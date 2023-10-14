@@ -1,0 +1,170 @@
+@font-face {
+    /* rule used to load custom font files*/
+    font-family: "Bowling";
+    /* font path relative to html file*/
+    src: url(fonts/bowling_2/Bowling.otf);
+}   
+
+body
+{
+    background-color: skyblue;
+    margin: 0px;
+}
+
+h1
+{
+    margin: 0px
+}
+
+h2
+{
+    font-family: 'Gochi Hand', cursive;
+    font-weight: normal;
+    color:dodgerblue;
+    font-size: 1.8em; 
+}
+
+hr
+{
+    border: 3px solid dodgerblue;
+}
+
+#body-content
+{
+    display: flex;
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#main-content
+{
+    background-color:aliceblue;
+    width: 660px;
+    padding: 15px;
+}
+
+#img-content
+{
+    background-color:antiquewhite;
+
+    text-align: center;
+
+    width: 360px;
+    padding: 15px;
+}
+
+#footer
+{
+    background-color: #FECB3E;
+    text-align: center;
+
+    color: #FFF;
+    height: 40px;
+    line-height: 40px;
+}
+
+.image-block
+{
+    margin-top: 200px;
+    margin-bottom: 200px;
+}
+
+.image-block > p {
+    font-family: 'Gochi Hand', cursive;
+
+    text-align: center;
+    /* display: none; */
+    visibility: hidden;
+}
+
+.subheaders
+{
+    font-family: "Gochi Hand", cursive;
+    font-weight: normal;
+    color: dodgerblue;
+    font-weight: bold;
+    font-size: 1.3em;   
+}
+
+.subcaptions
+{
+    color:dodgerblue;
+    font-weight: bold; 
+    font-size: 1.15em; 
+}
+
+#top-menu {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    z-index: 1;
+}
+
+#top-menu ul {
+    position: absolute;
+    display: none;
+}
+
+#sub-menu {
+    background-color: dodgerblue;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+#sub-menu ul {
+    position: absolute;
+    display: none;
+    top: 0px;
+    left: 500px;
+}
+
+#navbar ul {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+#navbar li {
+    background-color:dodgerblue;
+    width: 500px;
+    text-align: center;
+    position: relative;
+}
+
+#navbar li:hover > ul {
+    display: block;
+}
+
+#navbar a {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    font-size: 2.2em;
+    text-shadow: 0px 0px 3px darkgoldenrod;
+    display:block;
+    width:500px;
+    height: 50px;
+    line-height: 50px;
+    color:rgb(241, 207, 123);
+}
+
+#navbar {
+    background-color:dodgerblue;
+    display:flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+#navbar li:hover, #navbar #highlight-nav {
+    color: #FECB3E;
+    border-bottom: 5px solid #FECB3E;
+    /*a hover - we use li instead so we dont have second border in anchor*/
+    /*adding alone will make the page shift since its adds a border to the antire page
+    need the compound selector with #navbar to override the navbar a with the color and border*/
+}
