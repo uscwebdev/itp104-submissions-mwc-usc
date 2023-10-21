@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Michael Chen | Student Page
+        </title>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=divice-width, initial-scale = 1">
+
+        <style>
+            h2
+            {
+                background-color: lightgoldenrodyellow;
+                color: midnightblue;
+            }
+
+            strong
+            {
+                background-color:midnightblue;
+                color:lightgoldenrodyellow;
+            }
+
+            body {
+                width: 900px;
+                margin-left: auto;
+                margin-right: auto;
+                background-color: honeydew;
+            }
+
+            #minghao_img
+            {
+                float: right;
+                height: 200px;
+                width: auto;
+                margin-right: auto;
+                padding: 5px;
+            }
+
+            #header
+			{
+				text-align: center;
+			}
+
+            #main-section
+            {
+                display: flex;
+                flex-wrap: wrap;
+                width: 900px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            #section-left
+            {
+                display: flex;
+                flex-wrap: wrap;
+                width: 450px;
+            }
+            #section-right
+            {
+                display: flex;
+                flex-wrap: wrap;
+                width: 450px;
+            }
+
+            .subsection {
+                flex-wrap: wrap;
+                width: 430px;
+                padding: 10px;
+            }
+
+            @media (max-width: 767px) {
+			body {
+                width: auto;
+				background-color:lightskyblue;
+			}
+
+			#main-section {
+				width: auto;
+				flex-direction: column;
+				border: none;
+			}
+
+			#section-left, #section-right, .subsection {
+				width: auto;
+				border: auto;
+			}
+		}
+
+            
+        </style>
+    </head>
+
+    <body>
+    <div id="header">
+        <h1>Michael Chen</h1>
+        <p>Hello! You can reach me if you'd like at <a href="mailto:mwchen@usc.edu">mwchen@usc.edu</a>.</p>
+    </div>
+    <!-- #header-->
+
+    <div id="main-section">
+        <div id="section-left">
+            <div class="subsection">
+                <h2>About Me</h2>
+                <p>My favorite color is <strong>~midnight blue~</strong> and as for websites, here is one of my favorite content creators, <a target="_blank" href="https://www.youtube.com/@DaTruthDT">DaTruth</a>, on YouTube!</p>
+                
+                <img id="minghao_img" src="img/20230827_200235.jpg" alt="A Smug, Small, and Standing Old Bear">
+                
+                <p>Also, I don't know if this is my <em>favorite</em> activity per say, but a fun pasttime of mine is rearranging my sister's old stuffed animals in funny positions so that she gets a good chuckle out of it.</p>
+                <p>Here is an image on the right:</p> 
+            </div>
+            <!-- .subsection-->
+
+            <div class="subsection">
+                <h2>Completed Assignments</h2>
+                <ol>
+                    <li><a target="_blank" href="assignment_01/resume.html">Assignment 1: Web Resume</a></li>
+                    <li><a target="_blank" href="assignment_02/interests.html">Assignment 2: Interests Page</a></li>
+                    <li><a target="_blank" href="assignment_03/interests.html">Assignment 3: Two-Column Interests Page</a></li>
+                    <li><a target="_blank" href="assignment_04/calendar.html">Assignment 4: Calendar</a></li>
+                    <li><a target="_blank" href="assignment_05/igallery.html">Assignment 5: Interests Page Gallery Layout</a></li>
+                    <li><a target="_blank" href="assignment_06/interests.html">Assignment 6: Fonts, Drop-down Menu, Overlay Captions</a></li>
+                </ol>
+            </div>
+            <!-- .subsection-->
+        </div>
+        <!-- #section-left-->
+
+        <div id="section-right">
+            <div class="subsection">
+                <h2>Course Schedule</h2>
+
+                <p>Fall 2023 Classes</p>
+                <ul>
+                    <li>ITP 104 - Web Development</li>
+                    <li>ITP 249 - Data Analytics</li>
+                    <li>ITP 310 - User Experience and Design</li>
+                    <li>IR 324 - Multinational Enterprises</li>
+                    <li>ACCT 410x - Financial and Managerial Accounting</li>
+                </ul>
+            </div>
+            <!-- .subsection-->
+
+            <div class="subsection">
+                <h2>Completed Labs</h2>
+                <ol>
+                    <li><a target="_blank" href="index.html">Lab 2: Student Page</a></li>
+                    <li><a target="_blank" href="lab_03/resume.html">Lab 3: Updated Resume</a></li>
+                    <li><a target="_blank" href="lab_04/index.html">Lab 4: Student Page Layout</a></li>
+                    <li><a target="_blank" href="lab_05/form.html">Lab 5: Form Page</a></li>
+                    <li><a target="_blank" href="lab_06/gallery.html">Lab 6: Simple Photo Gallery</a></li>
+                    <li><a target="_blank" href="lab_07/puzzle.html">Lab 7: Image Puzzle</a></li>
+                    <li><a target="_blank" href="lab_08/index.html">Lab 8: Responsive Student Page</a></li>
+                </ol>
+            </div>
+            <!-- .subsection-->
+        </div>
+        <!-- #section-right-->
+    </div>
+    <!--    #main-section   -->
+    </body>
+</html>
