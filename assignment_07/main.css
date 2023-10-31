@@ -1,0 +1,66 @@
+.purple-palette {
+    color: #5702a1;
+}
+
+.purple-turqoise-palette {
+    color: #40288f;
+}
+
+.turqoise-palette {
+    color: #2e518a;
+}
+
+.turqoise-green-palette {
+    color: #347f83;
+}
+
+.green-palette {
+    color: #35ac7a;
+}
+
+#header {
+    background-image: url("img/audio.jpg"); 
+    background-size: cover;
+
+    font-size: 3em;
+    text-shadow: 0px 0px 10px #5702a1;
+    text-align:center;
+
+    margin: 0px;
+    height: 360px;
+    line-height: 360px;
+}
+
+#main-content {
+    /* display: flex; */
+    width: 920px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: antiquewhite;
+    padding: 20px;
+    font-size: 1.5em;
+}
+
+h1 {
+    margin: 0px;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+#wireframe-img {
+    width: auto;
+    height: 400px;
+    padding: 8px;
+}
+
+#about {
+
+    /* margin: 0px; */
+
+}
+
+body {
+    margin: 0px;
+}

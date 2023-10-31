@@ -1,0 +1,49 @@
+Outline
+
+Create assignment_07 folder in your GitHub submission folder.
+Put all your assignment-related files in this new folder.
+Style your page with a design of your choice. Keep everything readable.
+
+Topic: Music Exploration Website
+
+Discuss what your website is about in 1-2 sentences.
+A platform to introduce users to new and old artists alike. We prioritize quality albums, eps, and songs and 
+categorize our selections by many metrics including genre, recency, and popularity. 
+
+Topic must be different from your assignments and labs.
+Audience: Gen Z, modern audiences but also inclusive of a general audience that is older and has a larger variety of music tastes
+
+Who is your intended audience? As mentioned above, college students and Gen Z
+
+Design & Style:
+Discuss design and color scheme in 1-2 sentences. 
+I'm thinking of using monochromatic hues that vary from a rich-violet to a spearminty green. 
+Moreover, the idea is to use earthy-colors that are not jarring but rather, welcoming to the user.
+
+
+Provide a color palette (primary color, secondary, etc.).
+look at music.html to see the classes of css colors
+headers will be purple
+main text will be turqoise blue
+details and other things of the like will vary between green and blue depending on this
+more colors will be added if seen fit (colors in the middle will be used when appropriate)
+
+Provide links to 3 websites that inspired your design.
+
+
+
+Scope: 
+How many pages are you planning to have?
+What are the pages?
+If it is a single page website, how many sections are you planning to have?
+What are the sections?
+Note: each section needs to have substantial content so that it could be split into separate pages (multi-page website).
+Wireframes:
+Wireframes are low-fidelity sketches of your pages.
+Example 1,
+Example 2,
+Example 3.
+Create and display wireframes for all your pages.
+You can use wireframing tools like Balsamiq or Sketch (or other), or draw them by hand and attach pictures.
+To display PDF files, use <iframe> tags.
+
