@@ -1,0 +1,97 @@
+<DOCTYPE! html>
+<html>
+    <title></title>
+    <style>
+		body {
+			margin: 0px;
+			margin-bottom: 200px;
+		}
+
+		.section {
+			width: 400px;
+			padding: 15px;
+			margin: auto;
+		}
+
+		img {
+			border: solid 5px antiquewhite;
+			filter: drop-shadow(4px 4px 4px #a9535379);
+		}
+
+		h2 {
+			margin: 100px;
+		}
+
+		.img-animation img {
+			display: block;
+			width: 100%;
+			margin-left: auto;
+			margin-right: auto;
+			max-width: 200px;
+			position: relative;
+			transition: all 1s ease 0s;
+			/* overflow: visible; */
+		}
+
+		.img-animation .img-1 {
+			
+			bottom: 400px;
+			transform: scale(1) rotate(0deg);
+		}
+
+		.img-animation .img-2 {
+			bottom: 200px;
+			translate: 30px;
+			transform: scale(1) rotate(5deg);
+		}
+
+		.img-animation .img-3 {
+			
+			translate: 50px;
+			transform: scale(1) rotate(10deg);
+		}
+
+		/* applies to the descendant img1, listening to parent container*/
+		.img-animation:hover .img-1 {
+			translate: -200px;
+			transform: scale(1.5) rotate(-10deg);
+		}
+
+		.img-animation:hover .img-2 {
+			translate: 150px;
+			transform: scale(1.5) rotate(15deg);
+		}
+
+		.img-animation:hover .img-3 {
+			translate: 0px 350px;
+			transform: scale(1.5) rotate(-5deg);
+		}
+
+		
+
+    </style>
+    <body>
+		<div class="img-animation section">
+			<h2>Image Animation</h2>
+			
+			<img class="img-3" src="img/sun-transmission.jpg" alt="Apoptosis Cover">
+			<img class="img-2" src="img/paprika.webp" alt="Paprika Cover">
+			<img class="img-1" src="img/chrome-bull.jpg" alt="Chrome Bull Album Cover">
+
+			<!-- <div class="container">
+				<img src="img/chrome-bull.jpg" alt="Chrome Bull Album Cover">
+			</div> 
+
+			<div class="container">
+				<img src="img/chrome-bull.jpg" alt="Paprika Cover">
+			</div> 
+
+			<div class="container">
+				<img src="img/chrome-bull.jpg" alt="Apoptosis Cover">
+			</div> -->
+	
+		</div> <!-- #img-animation -->
+
+
+    </body>
+</html>
