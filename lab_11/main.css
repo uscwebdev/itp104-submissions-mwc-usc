@@ -1,0 +1,62 @@
+#header {
+    text-align: center;
+}
+
+#images-content {
+    display: flex;
+    flex-wrap: wrap;
+    width: 2048px;
+    height: 1365px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    overflow: visible;
+
+}
+
+.shift1 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 682px;
+    height: 455px;
+    position: relative;
+    top: -20px;
+    left: 0px;
+    right: 20px;
+    bottom: 0px;
+    box-shadow: 0px 0px 10px white;
+}
+
+.shift2 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 682px;
+    height: 455px;
+    position: relative;
+    top: 0px;
+    left: -250px;
+    right: 0px;
+    bottom: 0px;
+    box-shadow: 0px 0px 10px white;
+    overflow: visible;
+}
+
+.shift3 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 682px;
+    height: 455px;
+    position: relative;
+    top: 100px;
+    left: -200px;
+    right: 0px;
+    bottom: 0px;
+    box-shadow: 0px 0px 10px white;
+}
+
+.puzzle-images {
+    display: flex;
+    flex-wrap: wrap;
+    width: 682px;
+    height: 455px;
+}
