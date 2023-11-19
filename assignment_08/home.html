@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home Page</title>
+
+        <meta charset="UTF-8">
+
+        <meta name="keywords" content="give some tags ">
+
+        <meta name="description" 
+        content= "This project aims to create an HTML/CSS/JS-based music review and discovery website called 'Muzic'. 
+        Our homepage offers a visually engaging experience that sells the platform to our users. 
+        Additionally, the ‘Annual Picks' page provides insights into the year’s most influential musicians. 
+        We also introduce users to discover new music daily with our ‘Showcase' feature. 
+        Name idea and concept is roughly inspired from ITP-310 classmate Melody Chou">
+
+        <link rel="stylesheet" href="main.css">
+
+        <style>
+            #main-content {
+                /* display: flex; */
+                width: 900px;
+                margin-left: auto;
+                margin-right: auto;
+                background-color: antiquewhite;
+                padding: 10px;
+                font-size: 1.5em;
+                border: 10px solid salmon;
+            }
+
+            #navbar ul {
+                list-style: none;
+                padding: 0px;
+                margin: 0px;
+                width: 100%;
+            }
+
+            #navbar li {
+                background-color:dodgerblue;
+                /* width: 100px; */
+                width: 100%;
+                text-align: center;
+                position: relative;
+            }
+
+            #navbar li:hover > ul {
+                display: block;
+            }
+
+            #navbar a {
+                display: block;
+                text-decoration: none;
+                text-align: center;
+                font-size: 2.2em;
+                text-shadow: 0px 0px 3px darkgoldenrod;
+                display:block;
+                /* width:100px; */
+                /* height: 50px;
+                line-height: 50px; */
+                color:rgb(241, 207, 123);
+            }
+
+            #navbar {
+                background-color:dodgerblue;
+                display:flex;
+                align-items: flex-start;
+                justify-content: center;
+            }
+            /* , #navbar #highlight-nav */
+            #navbar li:hover, #navbar #highlight-nav{
+                color: #FECB3E;
+                border-bottom: 5px solid #FECB3E;
+                /*a hover - we use li instead so we dont have second border in anchor*/
+                /*adding alone will make the page shift since its adds a border to the antire page
+                need the compound selector with #navbar to override the navbar a with the color and border*/
+            }
+
+            #top-menu {
+                display: flex;
+                align-items: flex-start;
+                justify-content: center;
+                list-style-type: none;
+                margin: 0px;
+                padding: 0px;
+                z-index: 1;
+            }
+
+            #top-menu ul {
+                position: absolute;
+                display: none;
+            }
+
+            #sub-menu {
+                background-color: dodgerblue;
+                justify-content: center;
+                list-style-type: none;
+                margin: 0px;
+                padding: 0px;
+            }
+
+            #sub-menu ul {
+                position: absolute;
+                display: none;
+                top: 0px;
+                left: 100%;
+            }
+
+            body {
+                padding: 0px;
+                margin: 0px;
+                background-color: cornflowerblue;
+            }
+
+            #header {
+                background-image: url(img/muzic-cover.jpg);
+                background-size: cover;
+
+                font-size: 3em;
+                text-shadow: 0px 0px 10px white;
+                text-align:center;
+
+                margin: 0px;
+                height: 360px;
+                line-height: 360px;
+            }
+
+            h1 {
+                margin: 0px;
+                font-size: 3em;
+            }
+
+
+            #wireframe-img {
+                width: auto;
+                height: 400px;
+                padding: 8px;
+            }
+
+            #about-section {
+
+                /* margin: 0px; */
+
+            }
+
+            #big-reviews-container1,
+            #big-reviews-container2 {
+                display: flex;
+                width: 100px;
+            }
+
+            .small-reviews-containers {
+                display:flex;
+                flex-wrap:wrap;
+                
+                width: 300px;
+                height: auto;
+                background-color: aquamarine;
+                padding: 10px;
+                border: 5px solid blueviolet;
+                margin: 5px;
+            }
+
+            #home-page-image1,
+            #home-page-image3,
+            #home-page-image4,
+            #home-page-image5,
+            #home-page-image6 {
+                display: flex;
+				align-items: flex-start;
+
+				width: 240px;
+				height: 240px;
+				padding: 10px;
+            }
+
+            #home-page-image2 {
+                display: flex;
+				align-items: flex-start;
+
+				width: 240px;
+				height: auto;
+				padding: 10px;
+            }
+            
+            #intro-image{
+                float: right;
+                width: auto;
+                height: 150px;
+                padding: 10px;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <div id="navbar">
+
+            <ul id="top-menu">
+                <li><a id="highlight-nav" href="home.html#header">Home</a></li>
+                <li><a href="picks.html">Annual Picks
+                    <ul id="sub-menu">
+                        <li><a href="picks.html#main-page">Newest Picks</a>
+                            <ul>
+                                <li><a href="picks.html#img-first">Artist #1</a></li>
+                                <li><a href="picks.html#img-second">Artist #2</a></li>
+                                <li><a href="picks.html#img-third">Artist #3</a></li>
+                                <li><a href="picks.html#img-fourth">Artist #4</a></li>
+                                <li><a href="picks.html#img-fifth">Artist #5</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="picks.html#sub-page">Addendum</a>
+                            <ul>
+                                <li><a href="picks.html#main-first">Past Picks</a></li>
+                                <li><a href="picks.html#main-second">Honorable Mentions</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </a></li>
+                <li><a href="showcase.html">Showcase of the Day</a></li>
+            </ul>
+        </div>
+
+        <div id="header">
+            <h1>Muzic</h1>
+        </div>
+
+        <div id="main-content">
+            <h2 id="about-section">Introduction</h2>
+
+            <p>Ever heard of Muzic in your life?</p>
+
+            <img id="intro-image" src="img/intro-image.avif" alt="Into Image">
+
+            <p>
+                Well now you have! We are a dynamic platform celebrating music in all its forms. 
+                Discover new talents, explore diverse genres, and enjoy high-quality audio, curated playlists, and livestreamed performances. 
+            </p>
+
+            <p>
+                Every day, our platform features a "Showcase of the Day", highlighting exceptional artists who are making waves 
+                in the music scene. 
+                Additionally, we present an "Annual Picks" list to spotlight the five most popular and influential musicians of the year. 
+            </p>
+
+
+            <p>Join us in supporting artists from around the globe, and find Muzic for you!</p>
+
+            <h2 id="review-section">Jump into our Spotlight Channel</h2>
+
+            <p>
+                Each of these showcases below come from a compilation of past and current showcases of the day -- Check these out every week!
+            </p>
+
+            <div id="big-reviews-container1">
+                <div class="small-reviews-containers">
+                    <img id="home-page-image1" src="img/co-image.jpg" alt="Channel Orange Album Cover">
+                    
+                    <p class>
+                        Frank Ocean's "Pyramids" from his 2012 album "Channel Orange" is a musical journey that beautifully combines R&B, soul, and electronic elements. 
+                        Clocking in at nearly 10 minutes, the song's intricate production, ranging from smooth synths to funky guitar riffs, creates an immersive experience. 
+                        With its vivid storytelling and Ocean's soulful vocals, "Pyramids" stands out as a modern masterpiece, offering a unique blend of nostalgia and futurism that transcends genre boundaries.
+                    </p>
+                </div>
+
+                <div class="small-reviews-containers">
+                    <img id="home-page-image2" src="img/itch-cover" alt="Huang's Cover">
+
+                    <p>
+                        Isabelle Huang's "Itch" is a mesmerizing Mandopop track that beautifully captures romantic longing. 
+                        Huang’s soulful vocals, combined with the song’s lush and energetic composition, create a unique blend that leaves a lasting impression. 
+                        The lyrics, which depict a gentle beam of a setting sun and a sea of blue bright sky, are a testament to Huang’s musical versatility and evocative singing ability.
+                    </p>
+                </div>
+
+                <div class="small-reviews-containers">
+                    <img id="home-page-image3" src="img/reggiexclairo-cover.jpg" alt="Reggie x Clairo Collab">
+
+                    <p>
+                        “Hello?” by Clairo and Reggie Snow is a captivating track that beautifully explores the complexities of a romance strained by physical and emotional separation. 
+                        The song’s self-produced instrumental, featuring a simple two-chord synth loop and a bouncy drum beat, is reminiscent of Clairo’s previous SoundCloud hit "Flaming Hot Cheetos". 
+                        Clairo’s tender vocals paired with Reggie Snow’s reflective verses create a unique blend of indie pop and lo-fi alternative pop that leaves a lasting impression
+                    </p>
+                </div>
+            </div>
+
+            <div id="big-reviews-container2">
+                <!-- more unique reviews and images will come below -->
+                <div class="small-reviews-containers">
+                    <img id="home-page-image4" src="img/reggiexclairo-cover.jpg" alt="Reggie x Clairo Collab">
+
+                    <p>
+                       more substantial text incoming later
+                    </p>
+                </div>
+
+                <div class="small-reviews-containers">
+                    <img id="home-page-image5" src="img/reggiexclairo-cover.jpg" alt="Reggie x Clairo Collab">
+
+                    <p>
+                        more substantial text incoming later
+                     </p>
+                </div>
+
+                <div class="small-reviews-containers">
+                    <img id="home-page-image6" src="img/reggiexclairo-cover.jpg" alt="Reggie x Clairo Collab">
+
+                    <p>
+                        more substantial text incoming later
+                     </p>
+                </div>
+            </div>
+
+            <div >
+                <h2 id="mission-section">Values and Future Goals</h2>
+                <h3>Company Values</h3>
+                <ol>
+                    <li><h4>**Innovation**</h4></li>
+                    We strive to push the boundaries of technology and design, creating a unique and forward-thinking music experience.</li>
+                    <li><h4>**Passion for Music*</h4></li>
+                    We are deeply passionate about music and committed to supporting artists and fans alike.
+                    <li><h4>**User-Centric**</h4></li>
+                    We prioritize our users' needs and experiences, constantly seeking feedback and making improvements.
+                    <li><h4>**Diversity and Inclusion**</h4></li>
+                    We celebrate all genres of music and aim to represent artists from diverse backgrounds and cultures.
+                    <li><h4>**Integrity**</h4></li>
+                    We operate with transparency and honesty, building trust with our users and partners.
+                    <li><h4>**Collaboration**</h4></li>
+                    We believe in the power of collaboration, both within our team and with our users and artists.
+                    <li><h4>**Continuous Learning**</h4></li>
+                    We are committed to learning and growing, staying abreast of the latest trends in music and technology.
+                    <li><h4>**Sustainability**</h4></li>
+                    We are mindful of our impact on the environment and strive to make sustainable choices in our operations.
+                </ol>
+             
+
+                <h3>Future Goals</h3>
+
+                <h4>Spotify and SoundCloud Integrations</h4>
+                <p>
+                    We would like to develop a unified music discovery feature that allows users to pull song recommendations 
+                    from all linked music platforms, giving them a chance to create and manage playlists which pull from each platforms' best titles.
+                    This would leverage the recommendation algorithms of each platform, providing users with a diverse range of tailored music suggestions and create a seamless music listening experience.. 
+                    It would also give users the flexibility to mix and match songs from different sources, expanding their music discovery possibilities.
+                </p>
+
+                <h4>Social Features</h4>
+                <p>
+                    We also would like to create a feature that allows artists to share updates, behind-the-scenes content, and interact with fans directly on the app. 
+                    This could include live chats during performances, Q&A sessions, or even virtual meet-and-greets.
+                    We foresee implementing features that encourage community interaction, such as user-created public playlists, song voting systems, and discussion boards. 
+                    This would allow users to connect over shared musical interests and foster a sense of community within the app.
+                </p>
+
+                <h4>Cross-Platform Expansion and Offline Mode</h4>
+                <p>
+                    Lastly, we aim to expand the app to other platforms such as iOS, Android, and smart TVs to reach a wider audience (coming soon with iFrames). 
+                    Additionally, we want to implement an offline mode that allows users to download songs and listen to them without an 
+                    internet connection, making the app more accessible and convenient for users with limited or intermittent
+                    internet access.
+                </p>
+
+            </div>
+        </div>
+        <!-- #main content -->
+
+        <!-- Requirements
+            Create assignment_08 folder in your GitHub submission folder.
+            Put all your assignment-related files in this new folder.
+                Original layout.
+                Do not use class examples, labs, or assignments with modified content.
+                Do not use HTML templates found online.
+                Not adhering to this will result in a zero (0) score on this assignment and the final project.
+            Clean and readable design.
+            Clear purpose and topic.
+            Topic must be different from your assignments and labs.
+            Substantial and real content.
+            No lorem ipsum or image-fillers.
+            Good balance between text and graphics:
+            Do not create a text-only or an image-only page.
+
+            1. Navigation or menu with links to other pages or sections.
+            2. Each menu option must be a clickable link.
+            3. Links do not have to take users anywhere yet.
+            4. <meta> description tag with 100-350 characters.
+                Keep it descriptive yet concise.
+                Simply “Tommy Trojan’s Final Project” is not acceptable.
+            5. Intuitive User Interface (UI):
+                Clickable elements should be clearly marked, etc.
+        -->
+    </body>
+</html>
