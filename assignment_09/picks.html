@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home Page</title>
+
+        <meta charset="UTF-8">
+
+        <meta name="keywords" content="give some tags ">
+
+        <meta name="description" 
+        content= "This project aims to create an HTML/CSS/JS-based music review and discovery website called 'Muzic'. 
+        Our homepage offers a visually engaging experience that sells the platform to our users. 
+        Additionally, the ‘Annual Picks' page provides insights into the year’s most influential musicians. 
+        We also introduce users to discover new music daily with our ‘Showcase' feature. 
+        Name idea and concept is roughly inspired from ITP-310 classmate Melody Chou">
+
+        <link rel="stylesheet" href="main.css">
+
+        <style>
+            /* menu css */
+            #navbar ul {
+                list-style: none;
+                padding: 0px;
+                margin: 0px;
+                width: 100%;
+            }
+
+            #navbar li {
+                background-color:dodgerblue;
+                /* width: 100px; */
+                width: 100%;
+                text-align: center;
+                position: relative;
+            }
+
+            #navbar li:hover > ul {
+                display: block;
+            }
+
+            #navbar a {
+                display: block;
+                text-decoration: none;
+                text-align: center;
+                font-size: 2.2em;
+                text-shadow: 0px 0px 3px darkgoldenrod;
+                display:block;
+                /* width:100px; */
+                /* height: 50px;
+                line-height: 50px; */
+                color:rgb(241, 207, 123);
+            }
+
+            #navbar {
+                background-color:dodgerblue;
+                display:flex;
+                align-items: flex-start;
+                justify-content: center;
+            }
+            /* , #navbar #highlight-nav */
+            #navbar li:hover, #navbar #highlight-nav{
+                color: #FECB3E;
+                border-bottom: 5px solid #FECB3E;
+                /*a hover - we use li instead so we dont have second border in anchor*/
+                /*adding alone will make the page shift since its adds a border to the antire page
+                need the compound selector with #navbar to override the navbar a with the color and border*/
+            }
+
+            #top-menu {
+                display: flex;
+                align-items: flex-start;
+                justify-content: center;
+                list-style-type: none;
+                margin: 0px;
+                padding: 0px;
+                z-index: 1;
+            }
+
+            #top-menu ul {
+                position: absolute;
+                display: none;
+            }
+
+            #sub-menu {
+                background-color: dodgerblue;
+                justify-content: center;
+                list-style-type: none;
+                margin: 0px;
+                padding: 0px;
+            }
+
+            #sub-menu ul {
+                position: absolute;
+                display: none;
+                top: 0px;
+                left: 100%;
+            }
+
+            body {
+                padding: 0px;
+                margin: 0px;
+                background-color: cornflowerblue;
+            }
+
+            #header {
+                background-image: url(img/muzic-cover.jpg);
+                background-size: cover;
+
+                font-size: 3em;
+                text-shadow: 0px 0px 10px white;
+                text-align:center;
+
+                margin: 0px;
+                height: 360px;
+                line-height: 360px;
+            }
+
+            h1 {
+                margin: 0px;
+                font-size: 3em;
+            }
+
+            h2 {
+                text-align: center;
+                background-color: aquamarine;
+            }
+
+            #main-content {
+                /* display: flex; */
+                width: 900px;
+                margin-left: auto;
+                margin-right: auto;
+                background-color: antiquewhite;
+                padding: 10px;
+                font-size: 1.5em;
+                border: 10px solid salmon;
+
+                display: flex;
+                position: relative;
+            }
+
+            img {
+                object-fit: cover;
+                max-width: 100%;
+                max-height: 100%;
+            }
+
+            .horizontal-div {
+                width: 100%;
+                height: auto;
+
+                margin-left: auto;
+                margin-right: auto;
+                flex-wrap: wrap;
+                display: flex;
+                position: relative;
+
+                background-color: aliceblue;
+            }
+
+            .vertical-div {
+                width: 300px;
+                height: auto;
+                /* use for single width div */
+                flex-wrap: wrap;
+                display: flex;
+                position: relative;
+
+                background-color: aliceblue;
+            }
+
+            .single-width-div {
+                width: 260px;
+                margin: 10px;
+                padding: 10px;
+
+                position: relative;
+			    display:flex;
+                flex-wrap: wrap;
+            }
+
+            .double-width-div {
+                width: 560px;
+                margin: 10px;
+                padding: 10px;
+
+                position: relative;
+			    display:flex;
+                flex-wrap: wrap;
+            }
+
+            .triple-width-div {
+                width: 860px;
+                margin: 10px;
+                padding: 10px;
+
+                position: relative;
+			    display:flex;
+                flex-wrap: wrap;
+            }
+
+            .overlay {
+                /* font-family: 'Gochi Hand', cursive; */
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                right: 0px;
+                bottom: 0px;
+                background-color: rgba(0,0,0,0.6);
+                color: white;
+                text-align: center;
+                padding: 20px;
+
+                visibility: hidden;
+
+                display: flex;
+                align-items: center;
+                align-content: center;
+                justify-content: center;
+		    }
+
+            .single-width-div:hover > .overlay {
+                visibility: visible;
+            }
+
+            .double-width-div:hover > .overlay {
+                visibility: visible;
+            }
+
+            .triple-width-div:hover > .overlay {
+                visibility: visible;
+            }
+
+            #first-page {
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+            #second-page {
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+        </style>
+    </head>
+    
+    <body>
+        <div id="header">
+            <h1>Annual Picks</h1>
+        </div>
+
+        <div id="navbar">
+            <ul id="top-menu">
+                <li><a href="home.html#header">Home</a></li>
+                <li><a id="highlight-nav" href="picks.html">Annual Picks
+                    <ul id="sub-menu">
+                        <li><a href="picks.html#first-page">Newest Picks</a>
+                            <ul>
+                                <li><a href="picks.html#first-artist">Artist #1</a></li>
+                                <li><a href="picks.html#second-artist">Artist #2</a></li>
+                                <li><a href="picks.html#third-artist">Artist #3</a></li>
+                                <!-- <li><a href="picks.html#fourth-artist">Artist #4</a></li>
+                                <li><a href="picks.html#fifth-artist">Artist #5</a></li> -->
+                            </ul>
+                        </li>
+                        <li><a href="picks.html#second-page">Addendum</a>
+                            <ul>
+                                <li><a href="picks.html#past-picks">Past Picks</a></li>
+                                <li><a href="picks.html#honorable-mentions">Honorable Mentions</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </a></li>
+                <li><a href="showcase.html">Showcase of the Day</a></li>
+            </ul>
+        </div>
+
+        <div id="main-content">
+            <div id="page-container">
+                <h2 id="first-page">Newest Picks</h2>
+
+                <div id="first-artist">
+                    <h2>#1. Japanese Breakfast</h2>
+                </div>
+
+                <div class="horizontal-div">
+                    <div class="double-width-div">
+                        <img src="img/concert-jb.jpg" alt="JBreky Live">
+                        <div class="overlay">
+                            Japanese Breakfast performing at the Day In Day Out Festival in Seattle, Washington, 2022
+                        </div>
+                    </div>
+                    
+                    <div class="vertical-div">
+                        <div class="single-width-div">
+                            <img src="img/be-sweet-jb.jpg" alt="Be Sweet Cover">
+                            <div class="overlay">
+                                A nominated single from 2022 that propelled her to the top of the charts for our annual pick 
+                            </div>
+                        </div>
+    
+                        <div class="single-width-div">
+                            <img src="img/jubilee-jb.jpg" alt="Jubilee Cover">
+                            <div class="overlay">
+                                While the album is from 2021, it is a must listen for all JB fans!
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="triple-width-div">
+                        <img src="img/glider-jb.jpg" alt="Japanese Breakfast's Glider for Sable">
+                        <div class="overlay"> 
+                            <!-- <h1>Japanese Breakfast's cover for "Glider" </h1> -->
+                                <p>
+                                "Sable," released in 2021, is an indie video game developed by Shedworks and published by Raw Fury. 
+                                Set in a mesmerizing open-world desert, the game follows the titular character, Sable, as she embarks on a rite of passage known as "The Mask-Wearing." 
+                                With a distinctive art style inspired by French artist Moebius, "Sable" received acclaim for its unique visuals and atmospheric storytelling.
+                                </p>
+    
+                                <p>
+                                Complementing the game's immersive experience is the ethereal soundtrack composed by indie musician Michelle Zauner, known by her stage name Japanese Breakfast. 
+                                Zauner's hauntingly beautiful musical contributions earned widespread praise, seamlessly weaving into the game's narrative to 
+                                enhance the emotional resonance of Sable's journey, contributing significantly to the overall success and artistic impact of the game.
+                                </p>    
+                        </div>
+                    </div>
+                </div>
+
+                <div id="second-artist">
+                    <h2>#2. Duckwrth</h2>
+                </div>
+
+                <div class="horizontal-div">
+                    <div class="single-width-div">
+                        <img src="img/headshot-duckwrth.jpg" alt="Duckwrth">
+                        <div class="overlay">
+                            Jared Leonardo Lee, better known by his stage name Duckwrth, is an American rapper, singer, songwriter, and artist
+                        </div>
+                    </div>
+
+                    <div class="single-width-div">
+                        <img src="img/riot-duckwrth.jpg" alt="Start a Riot Cover">
+                        <div class="overlay">
+                            "Start a Riot" is a rap banger featured on the blockbuster "Spider-Man: Into the Spider-Verse".
+                            It's a high-energy track that perfectly encapsulates the spirit of rebellion and freedom.
+                        </div>
+                    </div>
+
+                    <div class="single-width-div">
+                        <img src="img/boy-duckwrth.jpg" alt="BOY Cover">
+                        <div class="overlay">
+                            “BOY” from the “an XTRA UUGLY Mixtape” stands out as a track that sparks discussions, 
+                            particularly with its poignant lyrics about race, gender, and love.
+                        </div>
+                    </div>
+
+                    <div class="triple-width-div">
+                        <img src="img/chrome-bull-duckwrth.jpg" alt="Chrome Bull XL">
+                        <div class="overlay">
+                            "Chrome Bull" by Duckwrth is an astonishing EP that pushes the boundaries of modern dance music. 
+                            The EP opens with the mind-meltingly groovy track "11:30", which employs a constant deep bass and a subdued synth lead underneath Duckwrth's signature buttery-smooth vocals. 
+                            The song "Ce Soir" takes a different approach, using light layers of distortion and robotic backing vocals to accentuate a sensual, deeper melody. 
+                            The EP also includes the high-energy track "Power", which ends the EP on a high note with its distorted instrumental and powerfully confident lyrics. 
+                            Overall, "Chrome Bull" showcases Duckwrth's ability to constantly innovate and push dance music into the future.
+                        </div>
+                    </div>
+
+                    <div class="single-width-div">
+                        <img src="img/cb-dlx5-duckwrth.jpg" alt="Chrome Bull Deluxe Tracks">
+                        <div class="overlay">
+                            The deluxe edition of Chrome Bull features five-extra tracks, including "007" and "Feel the Feels" which are fan favorites
+                        </div>
+                    </div>
+
+                    <div class="single-width-div">
+                        <img src="img/true-giants-duckwrth.jpg" alt="Giants - True Damage">
+                        <div class="overlay">
+                            “Giants” by True Damage blended multilingual lyrics and hip-hop beats, accumulating 3 million YouTube views within just six hours in 2019
+                        </div>
+                    </div>
+
+                    <div class="single-width-div">
+                        <img src="img/kiss-u-right-now-duckwrth.jpg" alt="Kiss U Right Now Cover">
+                        <div class="overlay">
+                            “Kiss U Right Now” from Duckwrth’s album “SuperGood” explores the challenges of keeping virtual romantic connections, a theme that resonated with many listeners during the pandemic.
+                        </div>
+                    </div>
+                </div>
+              
+                <div id="third-artist">
+                    <h2>#3. Makiza</h2>
+                </div>
+
+                <div class="horizontal-div">
+                    <div class="vertical-div">
+                        <div class="single-width-div">
+                            <img src="img/la-rosa-de-los-vientos-makiza.jpg" alt="La Rosa de Lose Vientos Song Cover">
+                            <div class="overlay"> 
+                                In "La Rosa de los Vientos," Makiza crafts a captivating blend of hip-hop and Latin rhythms that defines the essence of their musical collaboration.
+                                The track made a resurgence during 2023 on TikTok.
+                            </div>
+                        </div>
+
+                        <div class="single-width-div">
+                            <img src="img/casino-royale-makiza.webp" alt="Casino Royale Album Cover">
+                            <div class="overlay">
+                                "Casino Royale" is their second studio album released in 2005. 
+                                It features hot singles like "En Paro" and "La Vida Es Como un Casino"
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="double-width-div">
+                        <img src="img/groupshot-makiza.webp" alt="Groupshot of Makiza">
+                        <div class="overlay">
+                            Makiza, a pioneering hip-hop group hailing from Chile, emerged in the late 1990s and played a pivotal role in shaping the Latin American rap scene. 
+                            Comprised of MCs Anita Tijoux and Seo2, along with DJ Squat, Makiza's innovative blend of socially conscious lyrics, sharp rhymes, and eclectic beats 
+                            garnered them widespread acclaim, establishing them as trailblazers in the Latin American hip-hop landscape.
+                        </div>
+                    </div>
+                </div>
+
+                <h2 id="first-page">Newest Picks</h2>
+
+                <div id="past-picks"></div>
+                <p>More development will come soon for past-picks</p>
+                <div id="honorable-mentions"></div>
+                <p>More development will come soon for honorable-mentions</p>
+
+            </div>
+        </div>
+    </body>
+</html>
