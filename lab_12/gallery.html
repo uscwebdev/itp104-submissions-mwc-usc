@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Favorite TV | Michael Chen</title>
+
+	<style>
+        body {
+            margin: 0px;
+        }
+
+        h1 {
+            margin: 0px;
+        }
+
+        h2 {
+            color:blueviolet;
+            text-align: center;
+            margin-top: 50px;
+            display: block;
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+
+        #header {
+            background-image: url('img/entertainment.webp');
+            background-size: cover;
+            background-position:center;
+            color: #FFF;
+            font-size: 1.5em;
+            text-align: center;
+            text-shadow: 0px 0px 10px #000;
+            height: 350px;
+            line-height: 350px;
+        }
+        #main {
+            width: 1000px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 10px;
+            padding-bottom: 50px;
+        }
+
+		#gallery {
+			display: flex;
+			align-items: flex-start;
+		}
+
+        #gallery-caption {
+            text-align: center;
+        }
+
+		.thumbnail {
+			width: 180px;
+			height: auto;
+			margin: 10px;
+			opacity: 0.9;
+            /* border: solid 5px #000; */
+		}
+		
+		.thumbnail:hover{
+			opacity: 1.0;
+		}
+
+		.img-container > p{
+			text-align: center;
+			/* display: none; */
+			visibility: hidden;
+		}
+
+		.thumbnail:hover + p {
+			/* display: block; */
+			visibility: visible;
+			/*ok to do, but you will have the same page shifting issues
+			useful for faq's 
+			visibility: hidden keeps space reserved for the element or gives the space to others if not set to hidden*/
+		}
+	</style>
+</head>
+<body>
+    <div id="header">
+        <h1>Great Entertainment</h1>
+    </div> <!-- #header -->
+
+    <div id="main">
+        
+        <h2>My Favorites</h2>
+
+        <p id="gallery-caption">Regardless of time, I think there is a quality to each of these shows that is so evident in their production. </p>    
+        <p id="gallery-caption">I can write days and days on each of these shows/movies but you just have to watch for yourself!</p>
+
+        <div id="gallery">
+
+            <div class="img-container">
+            <img id="daredevil" class="thumbnail" src="img/img_1.webp" alt="Daredevil">
+            <p>Daredevil</p>
+            </div>
+
+            <div class="img-container">
+            <img id="bcs" class="thumbnail" src="img/img_2.avif" alt="Better Call Saul">
+            <p>Better Call Saul</p>
+            </div>
+
+            <div class="img-container">
+            <img id="twin-peaks" class="thumbnail" src="img/img_4.jpg" alt="Twin Peaks">
+            <p>Twin Peaks</p>
+            </div>
+
+            <div class="img-container">
+            <img id="arrival" class="thumbnail" src="img/img_3.jpg" alt="Arrival">
+            <p>Arrival</p>
+            </div>
+
+            <div class="img-container">
+            <img id="lupin" class="thumbnail" src="img/img_5.jpg" alt="Lupin">
+            <p>Lupin</p>
+            </div>
+        </div> 
+        <!-- #gallery -->
+    </div>
+    <!--    #main   -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <script>
+        $('#daredevil').click(function(){
+			$('.img-container > #daredevil').css('border', 'solid 5px blueviolet');
+            $('.img-container > #bcs').css('border', 'none');
+            $('.img-container > #twin-peaks').css('border', 'none');
+            $('.img-container > #arrival').css('border', 'none');
+            $('.img-container > #lupin').css('border', 'none');
+		});
+
+        $('#bcs').click(function(){
+			$('.img-container > #bcs').css('border', 'solid 5px blueviolet');
+            $('.img-container > #daredevil').css('border', 'none');
+            $('.img-container > #twin-peaks').css('border', 'none');
+            $('.img-container > #arrival').css('border', 'none');
+            $('.img-container > #lupin').css('border', 'none');
+		});
+
+        $('#twin-peaks').click(function(){
+			$('.img-container > #twin-peaks').css('border', 'solid 5px blueviolet');
+			$('.img-container > #bcs').css('border', 'none');
+            $('.img-container > #daredevil').css('border', 'none');
+            $('.img-container > #arrival').css('border', 'none');
+            $('.img-container > #lupin').css('border', 'none');
+		});
+
+        $('#arrival').click(function(){
+			$('.img-container > #arrival').css('border', 'solid 5px blueviolet');
+            $('.img-container > #twin-peaks').css('border', 'none');
+			$('.img-container > #bcs').css('border', 'none');
+            $('.img-container > #daredevil').css('border', 'none');
+            $('.img-container > #lupin').css('border', 'none');
+		});
+
+        $('#lupin').click(function(){
+			$('.img-container > #lupin').css('border', 'solid 5px blueviolet');
+            $('.img-container > #arrival').css('border', 'none');
+            $('.img-container > #twin-peaks').css('border', 'none');
+			$('.img-container > #bcs').css('border', 'none');
+            $('.img-container > #daredevil').css('border', 'none');
+		});
+    </script>
+</body>
+</html>
