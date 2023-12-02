@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Showcase Page</title>
+
+        <meta charset="UTF-8">
+
+        <meta name="keywords" content="Muzic, music, Peach Pit, review, performances, picks, showcase, survey">
+
+        <meta name="description" 
+        content= "This 'Showcase' page introduce users to new music daily. 
+        The page centers around one artist at a time-- in this case, Peach Pit.
+        It gives a bio, some past audio content, and an overview of their entire discography.
+        Lastly, the user can enter their own picks through form survey.">
+
+        <link rel="stylesheet" href="main.css">
+
+        <style>
+            #header {
+                background-image: url(img/peach-pit-banner.jpg);
+                /* text-shadow: 0px 0px 10px darkslateblue; */
+            }          
+
+            .float-left {
+                float: left;
+                width: 280px;
+                height: auto;
+                padding: 10px;
+            }
+
+            .float-right {
+                float: right;
+                width: 240px;
+                height: auto;
+                padding: 10px;
+            }
+           
+            .container {
+            display: flex;
+            }
+
+            .images1,
+            .images2 {
+                flex: 25%;
+            }
+
+            .text1,
+            .text2 {
+                flex: 25%;
+            }
+
+            .text1 p {
+                margin-top: 30px;
+            }
+
+            .text2 p {
+                margin-top: 30px;
+            }
+
+            .discography-img {
+                width: 80%;
+                height: auto;
+                margin-top: 20px;
+            }
+
+            iframe {
+                width: 49%;
+                aspect-ratio: 16/9;
+            }
+
+            /* #link-frame {
+                width: 100%;
+            } */
+
+        </style>
+    </head>
+
+    <body>
+        <div id="navbar">
+            <ul id="top-menu">
+                <li><a href="home.html#navbar">Home</a></li>
+                <li><a href="picks.html#navbar">Picks</a>
+                    <ul id="sub-menu">
+                        <li><a href="picks.html#main-content">Newest Picks</a>
+                            <ul>
+                                <li><a href="picks.html#first-artist">Artist #1</a></li>
+                                <li><a href="picks.html#second-artist">Artist #2</a></li>
+                                <li><a href="picks.html#third-artist">Artist #3</a></li>
+                                <!-- <li><a href="picks.html#fourth-artist">Artist #4</a></li>
+                                <li><a href="picks.html#fifth-artist">Artist #5</a></li> -->
+                            </ul>
+                        </li>
+                        <li><a href="picks.html#past-picks">Addendum</a>
+                            <ul>
+                                <li><a href="picks.html#past-picks">Past Picks</a></li>
+                                <li><a href="picks.html#honorable-mentions">Honorable Mentions</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a id="highlight-nav" href="showcase.html">Daily Showcase</a></li>
+            </ul>
+        </div>
+
+        <div id="header" class="light-pink-palette">
+            <h1>Today's Showcase</h1>
+        </div>
+
+        <div id="main-content">
+            <h2 class="dark-palette">Peach Pit</h2>
+
+            <img class="float-right" src="img/peach-pit.jpg" alt="Peach Pit Members">
+
+            <p>
+                Peach Pit is an indie pop band hailing from Vancouver, British Columbia, Canada. 
+                The band was formed in 2014 by high school friends Neil Smith and Chris Vanderkooy, who were later joined by 
+                Peter Wilton and Mikey Pascuzzi on bass and drums respectively.
+                More recently, they have been joined by multi-instrumentalist Dougal Bain McLean, who plays synth, guitar, and fiddle.
+            </p>
+
+            <p>
+                The band describes their own music as "chewed bubblegum pop", but fans have also described their sound as something more akin to sad pop or surf rock.
+                Their music is largely characterized by their soft spoken vocal style and guitar-driven rock melodies. 
+                Their music videos are produced by videographer Lester Lyons-Hookham. Interestingly, the band sported the same clothes for every live 
+                performance during their "Being So Normal" album phase after buying them for their first music video shoot.
+            </p>
+
+            <p>
+                Their debut EP, Sweet FA, was released in June 2016, produced and recorded by Smith's former roommate Harley Small at 
+                The Space Studios in Vancouver BC. 
+                They quickly began work on their follow up release and debut LP, Being So Normal, which was released in September 2017.
+            </p>
+
+            <img class="float-left" src="img/peach-pit-group.jpg" alt="Another Group Shot">
+
+            <p>
+                Following the success of their debut album, the band quit their jobs to go on their first tour of North America, Europe, and Asia from 2017 to 2018. 
+                They have performed at renowned festivals such as SXSW and Osheaga, and have shared the stage with notable acts like Mac DeMarco and Dayglow.
+            </p>
+            
+            <p>
+                In April of 2020, the band released their highly anticipated sophomore album, "You and Your Friends." 
+                This album showcased a more mature sound while retaining their trademark laid-back charm. 
+                Tracks like "Black Licorice" and "Shampoo Bottles" received significant radio airplay and gained popularity on streaming platforms.
+            </p>
+
+            <hr>
+
+            <div class="video-section">
+                <h2 class="dark-palette">Past Content</h2>
+                <iframe src="https://www.youtube.com/embed/n8uiC9VmguM" title="Peach Pit - You and Your Friends (Full Live Concert)" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+                </iframe>
+
+                <iframe src="https://www.youtube.com/embed/ZC0ABN4UtRU" title="Peach Pit San Diego [Full Set]" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+                </iframe>
+            </div>
+
+            <hr>
+
+            <h2 class="dark-palette">Discography</h2>
+
+            <div class="container">
+                <div class="images1">
+                    <img class="discography-img" src="img/sweet-fa.jpg" alt="Sweet FA (2016)">
+                    <img class="discography-img" src="img/being-so-normal.jpg" alt="Being So Normal (2017)">
+                </div>
+                <div class="text1">
+                    <p>
+                        Sweet FA (2016): Debut LP recorded by Smith’s former roommate Harley Small at The Space Studios in Vancouver
+                    </p>
+                    <p>
+                        Being So Normal (2017): Another LP recorded by Small where their signature style was formed
+                    </p>
+                </div>
+                <div class="images2">
+                    <img class="discography-img" src="img/you-and-your-friends.jpg" alt="You and Your Friends (2020)">
+                    <img class="discography-img" src="img/from-2-to-3.jpg" alt="From 2 to 3 (2022)">
+                </div>
+                <div class="text2">
+                    <p>
+                        You and Your Friends (2020): Breakthrough album which popularized the group with its melancholy undertones
+                    </p>
+                    <p>
+                        From 2 to 3 (2022): The group's latest album that has mellower feel than their old, edgier tracks
+                    </p>
+                </div>
+            </div>
+            
+            <hr>
+
+            <div>
+                <h2 id="submit-a-pick" class="dark-palette">Picks Survey</h2>
+                <form action="survey.html">
+                    <div class="form-row">
+                        <div class="left-col">
+                            <label for="fName-id">First Name</label>
+                        </div>
+                        <input type="text" id="fName-id">
+                    </div>
+            
+                    <div class="form-row">
+                        <div class="left-col">
+                            <label for="lName-id">Last Name</label>
+                        </div>
+                        <input type="text" id="lName-id">
+                    </div>
+            
+                    <div class="form-row">
+                        <div class="left-col">
+                            <label for="email-id">Email</label>
+                        </div>
+                        <input type="email" id="email-id">
+                    </div>
+            
+                    <div class="form-row">
+                        <div class="left-col">
+                            <label for="phone-id">Phone</label>
+                        </div>
+                        <input type="tel" id="phone-id">
+                    </div>
+
+                    <div class="form-row">
+                        <div class="left-col">
+                            <label for="nomination-id">Nomination Type</label>
+                        </div>
+                        <select id="nomination-id">
+                            <option>--Select Nomination--</option>
+                            <option>Solo Artist</option>
+                            <option>Group or Band</option>
+                            <option>Unlisted or New</option>
+                        </select>
+                    </div>
+            
+                    <div class="form-row">
+                        <div class="left-col">
+                            <label for="msg-id">Write a Message</label>
+                        </div>
+            
+                        <textarea id="msg-id" placeholder="Tell us why you chose to pick this artist."></textarea>
+                    </div>
+
+                    <div id="submit-or-clear" class="form-row">
+                        <button type="submit">Submit Form</button>
+                        <button type="reset">Clear Form</button>
+                    </div>
+
+                </form>
+            </div>
+        </div>  
+    </body>
+</html>

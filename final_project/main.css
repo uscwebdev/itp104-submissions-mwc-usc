@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;700&display=swap');
+
+ /* COLOR SCHEME */
+ .light-palette {
+    color: lightyellow;
+}
+
+.face-mask-green {
+    color: #BDD9BF
+}
+
+.dark-green-palette {
+    color: #014421
+}
+
+.pink-palette {
+    color: #eeb4e4
+}
+
+.light-pink-palette {
+    color: #f6daf1
+}
+
+.dark-palette {
+    color: darkslateblue
+}
+/* COLOR SCHEME */
+
+/* NAVBAR */
+#navbar ul {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+}
+
+#navbar li {
+    background-color: #014421;
+    /* width: 100px; */
+    width: 100%;
+    text-align: center;
+    position: relative;
+}
+
+#navbar li:hover > ul {
+    display: block;
+}
+
+#navbar a {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    font-size: 2.2em;
+    font-weight: bold;
+    text-shadow: 4px 4px 4px #000;
+    display:block;
+    color: #f6daf1;
+}
+
+#navbar {
+    background-color:#014421;
+    display:flex;
+    align-items: flex-start;
+    justify-content: center;
+    position: sticky;
+    top:0;
+    z-index: 99999;
+}
+
+#navbar li:hover, #navbar #highlight-nav{
+    color: #eeb4e4;
+    border-bottom: 5px solid #eeb4e4;
+}
+
+#top-menu {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    z-index: 1;
+}
+
+#top-menu ul {
+    position: absolute;
+    display: none;
+}
+
+#sub-menu {
+    background-color: #014421;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+#sub-menu ul {
+    position: absolute;
+    display: none;
+    top: 0px;
+    left: 100%;
+}
+/* NAVBAR */
+
+/* BODY */
+body {
+    padding: 0px;
+    margin: 0px;
+    background-color: #BDD9BF;
+}
+
+/* HEADER */
+#header {
+    background-size:cover;
+    background-position: 25%;
+    text-shadow: 4px 4px 4px #000;
+    font-size: 2.5em;
+    border-bottom: solid 10px #014421;
+    text-align:center;
+
+    margin: 0px;
+    height: 460px;
+    line-height: 460px;
+}
+
+/* MAIN CONTENT DIV */
+#main-content {
+    /* display: flex; */
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    background-color: lightyellow;
+    padding: 10px;
+    font-size: 1.5em;
+    border-left: 10px solid #014421;
+    border-right: 10px solid #014421;
+    border-bottom: 10px solid #014421;
+}
+
+/* FORM */
+.form-row
+{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    padding: 4px;
+}
+
+.left-col
+{
+    width: 450px;
+}
+
+textarea,
+input, 
+select {
+    flex-grow: 1;
+    text-align: center;
+}
+
+button {
+    margin-right: 10px;
+}
+
+#submit-or-clear {
+    width: 20%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* H1 */
+h1 {
+    margin: 0px;
+    font-size: 3em;
+    font-family: 'Jost', sans-serif;
+}
+
+/* H2 */
+h2 {
+    text-align: center;
+    color: darkslateblue;
+    font-family: 'Jost', sans-serif;
+}
+
+/* H3 */
+h3 {
+    text-align: center;
+    color: darkslateblue;
+    font-family: 'Jost', sans-serif;
+}
+
+/* HR content dividers */
+hr {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border: solid 5px #f6daf1;
+}
+
+/* center formatting for text */
+.center-format {
+    text-align: center
+}
+
+/* ZOOM CSS */
+:root {
+    zoom: 90%;
+    font-family:'Jost', sans-serif;
+    /* https://github.com/indestructible-type/Jost/tree/master */
+    font-size: 85%;
+}

@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Picks Page</title>
+
+        <meta charset="UTF-8">
+
+        <meta name="keywords" content="Muzic, music, picks, genres, Japanese Breakfast, Duckwrth, Makiza, Joji, Emotional Oranges, Spill Tab, BENEE, Dhruv">
+
+        <meta name="description" 
+        content= "This 'Annual Picks' page provides insights into the year's three most influential musicians.
+        Later, the user is able to go to our page addendum to take an interactive look at past picks who have been nominated. 
+        They can also look into the honorable mentions to see who could be potential runner-ups for the following year.">
+
+        <link rel="stylesheet" href="main.css">
+
+        <style>
+            #header {
+                background-image: url(img/picks-bkg.webp);
+            }
+
+            /* img specifications */
+            img {
+                object-fit: cover;
+                max-width: 100%;
+                max-height: 100%;
+            }
+
+            /* imgs across */
+            .horizontal-div {
+                width: 100%;
+                height: auto;
+                /* border: 5px solid #014421; */
+
+                margin-left: auto;
+                margin-right: auto;
+                flex-wrap: wrap;
+                display: flex;
+                position: relative;
+                /* light pink palette */
+            }
+
+            /* imgs in column */
+            .vertical-div {
+                width: 300px;
+                height: auto;
+                /* use for single width div */
+                flex-wrap: wrap;
+                display: flex;
+                position: relative;
+                /* light pink palette */
+            }
+
+            /* css for diff img box sizes */
+            .single-width-div {
+                width: 260px;
+                margin: 10px;
+                border: solid 10px lightyellow;
+
+                position: relative;
+			    display:flex;
+                flex-wrap: wrap;
+            }
+
+            .double-width-div {
+                width: 560px;
+                margin: 10px;
+                border: solid 10px lightyellow;
+
+                position: relative;
+			    display:flex;
+                flex-wrap: wrap;
+            }
+
+            .triple-width-div {
+                width: 860px;
+                margin: 10px;
+                border: solid 10px lightyellow;
+
+                position: relative;
+			    display:flex;
+                flex-wrap: wrap;
+            }
+
+            .half-width-div {
+                width: 410px;
+                margin: 10px;
+                border: solid 10px lightyellow;
+
+                position: relative;
+			    display:flex;
+            }
+            /* css for diff img box sizes */
+
+            /* for hovering fxnality w/captions */
+            .overlay {
+                /* font-family: 'Gochi Hand', cursive; */
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                right: 0px;
+                bottom: 0px;
+                background-color: rgba(0,0,0,0.6);
+                color: white;
+                text-align: center;
+                padding: 20px;
+
+                /* visibility: hidden; */
+
+                display: flex;
+                align-items: center;
+                align-content: center;
+                justify-content: center;
+
+                opacity: 0;
+                transition: all 0.3s ease 0s;
+		    }
+
+            .single-width-div:hover > .overlay {
+                /* visibility: visible; */
+                opacity: 1;
+                
+            }
+
+            .double-width-div:hover > .overlay {
+                /* visibility: visible; */
+                opacity: 1;
+            }
+
+            .triple-width-div:hover > .overlay {
+                /* visibility: visible; */
+                opacity: 1;
+            }
+
+            .half-width-div:hover > .overlay {
+                opacity: 1;
+            }          
+
+            /* new picks container */
+            #first-page {
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+            /* old picks container */
+            #second-page {
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+            iframe {
+                border: solid 1px #eeb4e4;
+                width: 100%;
+                height: 650px;
+                /* margin-left: auto;
+                margin-right: auto; */
+            }
+
+        </style>
+    </head>
+    
+    <body>
+        <div id="navbar">
+            <ul id="top-menu">
+                <li><a href="home.html#navbar">Home</a></li>
+                <li><a id="highlight-nav" href="picks.html#navbar">Picks</a>
+                    <ul id="sub-menu">
+                        <li><a href="picks.html#main-content">Newest Picks</a>
+                            <ul>
+                                <li><a href="picks.html#first-artist">Artist #1</a></li>
+                                <li><a href="picks.html#second-artist">Artist #2</a></li>
+                                <li><a href="picks.html#third-artist">Artist #3</a></li>
+                                <!-- <li><a href="picks.html#fourth-artist">Artist #4</a></li>
+                                <li><a href="picks.html#fifth-artist">Artist #5</a></li> -->
+                            </ul>
+                        </li>
+                        <li><a href="picks.html#past-picks">Addendum</a>
+                            <ul>
+                                <li><a href="picks.html#past-picks">Past Picks</a></li>
+                                <li><a href="picks.html#honorable-mentions">Honorable Mentions</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="showcase.html">Daily Showcase</a></li>
+            </ul>
+        </div>
+
+        <div id="header" class="light-pink-palette">
+            <h1>Annual Picks</h1>
+        </div>
+
+        <div id="main-content">
+            <div id="page-container">
+                <h2>This Year's Selections</h2>
+                <p class="center-format">Hover over the gallery of each artist to read more about their best works!</p>
+                <hr>
+
+                <div id="first-artist"><h3>#1. Japanese Breakfast</h3></div>
+
+                <div class="horizontal-div">
+                    <div class="double-width-div">
+                        <img src="img/concert-jb.jpg" alt="JBreky Live">
+                        <div class="overlay">
+                            Japanese Breakfast performing at the Day In Day Out Festival in Seattle, Washington, 2022
+                        </div>
+                    </div>
+                    
+                    <div class="vertical-div">
+                        <div class="single-width-div">
+                            <img src="img/be-sweet-jb.jpg" alt="Be Sweet Cover">
+                            <div class="overlay">
+                                A nominated single from 2022 that propelled her to the top of the charts for our annual pick 
+                            </div>
+                        </div>
+    
+                        <div class="single-width-div">
+                            <img src="img/jubilee-jb.jpg" alt="Jubilee Cover">
+                            <div class="overlay">
+                                While the album is from 2021, it is a must listen for all JB fans!
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="triple-width-div">
+                        <img src="img/glider-jb.jpg" alt="Japanese Breakfast's Glider for Sable">
+                        <div class="overlay"> 
+                            <!-- <h1>Japanese Breakfast's cover for "Glider" </h1> -->
+                                <p>
+                                "Sable," released in 2021, is an indie video game developed by Shedworks and published by Raw Fury. 
+                                Set in a mesmerizing open-world desert, the game follows the titular character, Sable, as she embarks on a rite of passage known as "The Mask-Wearing." 
+                                With a distinctive art style inspired by French artist Moebius, "Sable" received acclaim for its unique visuals and atmospheric storytelling.
+                                </p>
+    
+                                <p>
+                                Complementing the game's immersive experience is the ethereal soundtrack composed by indie musician Michelle Zauner, known by her stage name Japanese Breakfast. 
+                                Zauner's hauntingly beautiful musical contributions earned widespread praise, seamlessly weaving into the game's narrative to 
+                                enhance the emotional resonance of Sable's journey, contributing significantly to the overall success and artistic impact of the game.
+                                </p>    
+                        </div>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div id="second-artist"><h3>#2. Makiza</h3></div>
+
+                <div class="horizontal-div">
+                    <div class="vertical-div">
+                        <div class="single-width-div">
+                            <img src="img/la-rosa-de-los-vientos-makiza.jpg" alt="La Rosa de Lose Vientos Song Cover">
+                            <div class="overlay"> 
+                                In "La Rosa de los Vientos," Makiza crafts a captivating blend of hip-hop and Latin rhythms that defines the essence of their musical collaboration.
+                            </div>
+                        </div>
+
+                        <div class="single-width-div">
+                            <img src="img/casino-royale-makiza.webp" alt="Casino Royale Album Cover">
+                            <div class="overlay">
+                                "Casino Royale" is their second studio album released in 2005. 
+                                It features hot singles like "En Paro" and "La Vida Es Como un Casino"
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="double-width-div">
+                        <img src="img/groupshot-makiza.webp" alt="Groupshot of Makiza">
+                        <div class="overlay">
+                            Makiza, a pioneering hip-hop group hailing from Chile, emerged in the late 1990s and played a pivotal role in shaping the Latin American rap scene. 
+                            Comprised of MCs Anita Tijoux and Seo2, along with DJ Squat, Makiza's innovative blend of socially conscious lyrics, sharp rhymes, and eclectic beats 
+                            garnered them widespread acclaim, establishing them as trailblazers in the Latin American hip-hop landscape.
+                        </div>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div id="third-artist"><h3>#3. Duckwrth</h3></div>
+
+                <div class="horizontal-div">
+                    <div class="single-width-div">
+                        <img src="img/headshot-duckwrth.jpg" alt="Duckwrth">
+                        <div class="overlay">
+                            Jared Leonardo Lee, better known by his stage name Duckwrth, is an American rapper, singer, songwriter, and artist
+                        </div>
+                    </div>
+
+                    <div class="single-width-div">
+                        <img src="img/riot-duckwrth.jpg" alt="Start a Riot Cover">
+                        <div class="overlay">
+                            "Start a Riot" is a rap banger featured on the blockbuster "Spider-Man: Into the Spider-Verse".
+                            It's a high-energy track that perfectly encapsulates the spirit of rebellion and freedom.
+                        </div>
+                    </div>
+
+                    <div class="single-width-div">
+                        <img src="img/boy-duckwrth.jpg" alt="BOY Cover">
+                        <div class="overlay">
+                            “BOY” from the “an XTRA UUGLY Mixtape” stands out as a track that sparks discussions, 
+                            particularly with its poignant lyrics about race, gender, and love.
+                        </div>
+                    </div>
+
+                    <div class="triple-width-div">
+                        <img src="img/chrome-bull-duckwrth.jpg" alt="Chrome Bull XL">
+                        <div class="overlay">
+                            "Chrome Bull" by Duckwrth is an astonishing EP that pushes the boundaries of modern dance music. 
+                            The EP opens with the mind-meltingly groovy track "11:30", which employs a constant deep bass and a subdued synth lead underneath Duckwrth's signature buttery-smooth vocals. 
+                            The song "Ce Soir" takes a different approach, using light layers of distortion and robotic backing vocals to accentuate a sensual, deeper melody. 
+                            The EP also includes the high-energy track "Power", which ends the EP on a high note with its distorted instrumental and powerfully confident lyrics. 
+                            Overall, "Chrome Bull" showcases Duckwrth's ability to constantly innovate and push dance music into the future.
+                        </div>
+                    </div>
+
+                    <div class="single-width-div">
+                        <img src="img/cb-dlx5-duckwrth.jpg" alt="Chrome Bull Deluxe Tracks">
+                        <div class="overlay">
+                            The deluxe edition of Chrome Bull features five-extra tracks, including "007" and "Feel the Feels" which are fan favorites
+                        </div>
+                    </div>
+
+                    <div class="single-width-div">
+                        <img src="img/true-giants-duckwrth.jpg" alt="Giants - True Damage">
+                        <div class="overlay">
+                            “Giants” by True Damage blended multilingual lyrics and hip-hop beats, accumulating 3 million YouTube views within just six hours in 2019
+                        </div>
+                    </div>
+
+                    <div class="single-width-div">
+                        <img src="img/kiss-u-right-now-duckwrth.jpg" alt="Kiss U Right Now Cover">
+                        <div class="overlay">
+                            Released during the pandemic, “Kiss U Right Now” from Duckwrth’s album “SuperGood” explores the challenges of maintaining virtual romantic connections
+                        </div>
+                    </div>
+                </div>
+
+                <hr>
+
+                <h2 id="past-picks">Past Picks</h2>
+                    <ul>
+                        <li><a target="window" href="https://www.instagram.com/sushitrash/embed">Joji</a> - The enigmatic Japanese-Australian artist who seamlessly combines soft R&B with introspective lyricism</li>
+                        <li><a target="window" href="https://www.instagram.com/beneemusic/embed">BENEE</a> - A New Zealand pop sensation who continously captivates audiences with her infectious beats and relatable narratives</li>
+                        <li><a target="window" href="https://dhrvie.com/embed">Dhruv</a> - An indie maestro who paints sonic landscapes through blending bedroom pop and alternative sounds together</li>
+                    </ul>
+
+                    <iframe src="iframe_Muzic.html" name="window"></iframe>
+                       
+                <hr>
+                
+                <h2 id="honorable-mentions">Honorable Mentions</h2>
+                <p class="center-format">Here are our other top choices, but they sadly did not make into this year's top three.</p>
+                <p class="center-format">That's ok though. Great even. Since now they have a better chance to shine next year!</p>
+                <div class="horizontal-div">
+                    <div class="half-width-div">
+                        <img src="img/spill-tab.webp" alt="Spill Tab">
+                        <div class="overlay">
+                            Spill Tab is a genre-defying artist who crafts ethereal soundscapes with her raw vocal displays of emotion; 
+                            her French background and New York musical experience are both evident inspirations for her work
+                        </div>
+                    </div>
+                    
+                    <div class="half-width-div">
+                        <img src="img/Emotional-Oranges.webp" alt="Emotional Oranges">
+                        <div class="overlay">
+                            Emotional Oranges is a dynamic duo that transcends genres with their soulful blend of R&B and pop-- 
+                            forming waves in the West Coast where they were based from
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </body>
+</html>

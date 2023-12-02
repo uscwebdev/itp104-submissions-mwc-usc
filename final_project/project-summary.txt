@@ -1,0 +1,76 @@
+project-summary
+Michael Chen 
+ITP 104
+#3818976141
+
+MUZIC 
+
+*This is actual Project Summary, not the Outline. Outline and music.html are files from the planning stage in the initial parts of the final project. 
+
+Context:
+As reiterated from the meta tags, this project aims to create a music review and discovery website called 'Muzic'.  
+It has three main pages: the home page, the picks page, and the showcase page.
+We also have three other html documents: subscription and survey (confirmation of forms) and a decorative iframe page (lack of navbar on iframe page is intentional)
+Lastly, our external css file called main is our final relevant file. Again, music.html and outline and test.html are not what should be graded or looked at.
+As a disclaimer, much of the text used in to create the reviews come from generative AI like ChatGPT and Microsoft Copilot. 
+No code was ever pulled from AI, nonetheless in a malicious manner. 
+I made use of at least 2-3 extras in a complementary manner. 
+
+Styling:
+- a green, pink, and purple aesthetic
+- while the pallete changed significantly and the color scheme was updated, it stuck true to what the outline envisioned
+- it should feel inviting, comforting, and lighthearted
+- credit to Google fonts (Jost used globally throughout the files)
+
+Page Breakdown:
+1. Home Page (home.html)
+    The home page is self-explanatory, it gives the user a taste of what the project is all about.
+    It begins with an introduction followed by the Weekly Spotlight reviews. 
+    Then, we talk more about company values and our future goals-- ending off with our subscription form.
+
+Some key features:
+- container work with images and text
+- (Extras) dropdown hamburger menus from the company values; makes use of transitions
+- (Extras) use of form fields as a subscription; 
+    while this is mostly derivative from what was seen in class-- we have added differences to two parts:
+    1. other radio button - can now visibly toggle the message fields
+    you might note in the code I attempted to use jQuery at the end to solve this issue with click/change events 
+    but it ended up being more complicated than just working with the CSS combinators (which was also very difficult)
+    2. there is another form field that splits the responses in the showcase.html page
+- the everpresent navbar
+    it is stuck on top of the page for all 3-5 substantial pages
+    the navbar has highlighting and drop shadows to signify where you are located and working sub/sub-sub menus
+
+2. Picks Page (picks.html)
+    This 'Annual Picks' page provides insights into the year's three most influential musicians.
+    Later, the user is able to go to our page addendum to take an interactive look at past picks who have been nominated. 
+    They can also look into the honorable mentions to see who could be potential runner-ups for the following year
+
+Some key features:
+- work with container sizing and flexboxes
+- (Extras) image hovering
+    smooth and quick transitions in and out when images are hovered (in honorable mentions and new picks)
+    uses opacity and ease-in-out in css to achieve this effect
+    text is also substantial compared to the interest page gallery since actual reviews are being written
+- (Extras) iframe windows
+    uses the text link structure to open up online pages in a window
+    iframes are also used later on in showcase.html
+
+3. Showcases Page (showcase.html)
+    This 'Showcase' page introduce users to new music daily. 
+    The page centers around one artist at a time-- in this case, Peach Pit.
+    It gives a bio, some past audio content, and an overview of their entire discography.
+    Lastly, the user can enter their own picks through form survey.
+
+Some key features:
+- more text and image work
+- (Extras) using iframes to embed video content in addition to pages as seen previously
+- (Extras) additional dropdown menu survey and non-disappearing text (radios, checkboxes, and other typeable fields were previously used)
+
+Overall:
+- Iframes, transitions, and forms were used as extras
+- clear organization from navbar and other pages are alike can be observed
+- since I was constrained on time, I ended up making some smaller additions 
+to the end of my last two pages but I hope it still demonstrates what I learned from this class
+
+

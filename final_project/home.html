@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home Page</title>
+
+        <meta charset="UTF-8">
+
+        <meta name="keywords" content="Muzic, music, review, discovery, streaming, genres, artists, playlists, performances, community, picks, showcase, spotlight">
+
+        <meta name="description" 
+        content= "This project aims to create a music discovery website called 'Muzic'. 
+        In this homepage, we have an introduction followed by the Weekly Spotlight reviews.
+        Then, we talk more about company values and our future goals and end off with our subscription form.
+        Name idea and concept is roughly inspired from ITP-310 classmate Melody Chou">
+
+        <link rel="stylesheet" href="main.css">
+
+        <style>
+            #header {
+                background-image: url(img/muzic-cover.jpg);
+            }
+
+            #wireframe-img {
+                width: auto;
+                height: 400px;
+                padding: 8px;
+            }
+
+            #big-reviews-container1,
+            #big-reviews-container2,
+            #big-reviews-container3 {
+                display: flex;
+                width: 900px;
+                /* border-bottom: 5px solid #014421; */
+            }
+            
+            .small-reviews-containers {
+                display:flex;
+                flex-wrap:wrap;
+                
+                width: 300px;
+                height: auto;
+
+                /* font-weight: bold; */
+                background-color: lightyellow;
+                padding: 15px;
+            }
+
+            /* standard images */
+            .home-page-image1 {
+                display: flex;
+				align-items: flex-start;
+
+				width: 240px;
+				height: 240px;
+				padding: 10px;
+            }
+
+            /* for longer images */
+            .home-page-image2 {
+                display: flex;
+				align-items: flex-start;
+
+				width: 240px;
+				height: auto;
+				padding: 10px;
+            }
+            
+            #intro-image{
+                float: right;
+                width: auto;
+                height: 150px;
+                padding: 10px;
+            }
+
+            /* see jquery attempt below */
+            div.form-row:has(> div > label#other-account > input[type="radio"]:not(:checked)) + div.form-row {
+                display: none;
+            }
+            
+            div.form-row:has(> div > label#other-account > input[type="radio"]:checked) + div.form-row {
+                display: flex;
+            }
+
+
+            .values {
+                text-align: center;
+                border: 1mm ridge #BDD9BF;
+            }
+
+            .values + p {
+                transition: all 0.5s ease-in-out;
+                overflow: hidden;
+                max-height: 0px;
+            }
+
+            .values:hover + p,
+            .values + p:hover  {
+                max-height: 250px;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <div id="navbar">
+            <ul id="top-menu">
+                <li><a id="highlight-nav" href="home.html#navbar">Home</a></li>
+                <li><a href="picks.html#navbar">Picks</a>
+                    <ul id="sub-menu">
+                        <li><a href="picks.html#main-content">Newest Picks</a>
+                            <ul>
+                                <li><a href="picks.html#first-artist">Artist #1</a></li>
+                                <li><a href="picks.html#second-artist">Artist #2</a></li>
+                                <li><a href="picks.html#third-artist">Artist #3</a></li>
+                                <!-- <li><a href="picks.html#fourth-artist">Artist #4</a></li>
+                                <li><a href="picks.html#fifth-artist">Artist #5</a></li> -->
+                            </ul>
+                        </li>
+                        <li><a href="picks.html#past-picks">Addendum</a>
+                            <ul>
+                                <li><a href="picks.html#past-picks">Past Picks</a></li>
+                                <li><a href="picks.html#honorable-mentions">Honorable Mentions</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="showcase.html">Daily Showcase</a></li>
+            </ul>
+        </div>
+        <!-- navbar -->
+
+        <div id="header" class="light-pink-palette">
+            <h1>Muzic</h1>
+        </div>
+
+        <div id="main-content">
+            <h2 class="dark-palette">About</h2>
+
+            <img id="intro-image" src="img/intro-image.avif" alt="Intro Image">
+            <p>Ever heard of Muzic in your life?</p>
+
+            <p>
+                Well now you have! We are a dynamic platform celebrating music in all its forms. 
+                Discover new talents, explore diverse genres, and enjoy high-quality audio, curated playlists, and livestreamed performances. 
+            </p>
+
+            <p>
+                Every day, our platform features a "Showcase of the Day", highlighting exceptional artists who are making waves 
+                in the music scene. 
+                Additionally, we present an "Annual Picks" list to spotlight the three most popular and influential musicians of the year. 
+            </p>
+
+            <p>Join us in supporting artists from around the globe, and find Muzic for you!</p>
+
+            <h2 id="review-section" class="dark-palette">Weekly Spotlight Channel</h2>
+
+            <p class="center-format">
+                Jump into each of these selections below! They are compiled from past showcases of the day
+            </p>
+
+            <p class="center-format">
+                Check these out every week!
+            </p>
+
+            <div id="big-reviews-container1">
+                <div class="small-reviews-containers">
+                    <img class="home-page-image1" src="img/co-image.jpg" alt="Channel Orange Album Cover">
+                    
+                    <p class>
+                        Frank Ocean's "Pyramids" from his 2012 album "Channel Orange" is a musical journey that beautifully combines R&B, soul, and electronic elements. 
+                        Clocking in at nearly 10 minutes, the song's intricate production, ranging from smooth synths to funky guitar riffs, creates an immersive experience. 
+                        With its vivid storytelling and Ocean's soulful vocals, "Pyramids" stands out as a modern masterpiece, offering a unique blend of nostalgia and futurism that transcends genre boundaries.
+                    </p>
+                </div>
+
+                <div class="small-reviews-containers">
+                    <img class="home-page-image2" src="img/itch-cover" alt="Huang's Cover">
+
+                    <p>
+                        Isabelle Huang's "Itch" is a mesmerizing Mandopop track that beautifully captures romantic longing. 
+                        Huang’s soulful vocals, combined with the song’s lush and energetic composition, create a unique blend that leaves a lasting impression. 
+                        The lyrics, which depict a gentle beam of a setting sun and a sea of blue bright sky, are a testament to Huang’s musical versatility and evocative singing ability.
+                    </p>
+                </div>
+
+                <div class="small-reviews-containers">
+                    <img class="home-page-image1" src="img/reggiexclairo-cover.jpg" alt="Reggie x Clairo Collab">
+
+                    <p>
+                        “Hello?” by Clairo and Reggie Snow is a captivating track that beautifully explores the complexities of a romance strained by physical and emotional separation. 
+                        The song’s self-produced instrumental, featuring a simple two-chord synth loop and a bouncy drum beat, is reminiscent of Clairo’s previous SoundCloud hit "Flaming Hot Cheetos". 
+                        Clairo’s tender vocals paired with Reggie Snow’s reflective verses create a unique blend of indie pop and lo-fi alternative pop that leaves a lasting impression
+                    </p>
+                </div>
+            </div>
+
+            <div id="big-reviews-container2">
+                <!-- more unique reviews and images will come below -->
+                <div class="small-reviews-containers">
+                    <img class="home-page-image1" src="img/persona4-cover.jpg" alt="Persona 4 Golden OST">
+
+                    <p>
+                        "Heartbeat, Heartbreak" is a background song in Persona 4, sung by Shihoko Hirata. 
+                        It plays during cloudy and light rainy days in the game. 
+                        The lyrics narrate the subject's shattered dreams and broken promises, yet their persistent heartbeat symbolizes resilience and the determination to move forward amidst emotional turmoil. 
+                        The repetitive chorus of “Heartbeat, heartbeat, it keeps on pounding. Heartbreak, heartbreak, you tell me goodbye" deeply impacts avid enjoyers of the Persona 4 
+                        with its underlying themes of betrayal within the game's storyline.
+                    </p>
+                </div>
+
+                <div class="small-reviews-containers">
+                    <img class="home-page-image1" src="img/borombon-cover.jpg" alt="Panama! Volume 2: Latin Sounds, Cumbia, Tropical & Calypso Funk on the Isthmus 1967-77">
+
+                    <p>
+                        “Borombon” by Camilo Azuquita is a classic Latin song from 1969. 
+                        It’s a vibrant fusion of Latin sounds, cumbia, tropical and calypso funk.
+                        The song has been well received by fans, reflecting its nostalgic factor and popularity. 
+                        Azuquita’s powerful voice, striking trumpets, and rich piano create an energetic atmosphere. 
+                        Most popularly, this song was featured in the show "Better Call Saul" during a car scene with the major character Lalo Salamanca.
+                        Whether you’re a fan of Latin music or just discovering it, “Borombon” is a song worth adding to your playlist.
+                     </p>
+                </div>
+
+                <div class="small-reviews-containers">
+                    <img class="home-page-image1" src="img/tylerxtheinternet-cover.jpg" alt="Ego Death Cover">
+
+                    <p>
+                        "Palace/Curse" by The Internet, from their Ego Death album, is a unique story of two contrasting approaches to attracting a girl's attention, showcasing both a playful and an alluring approach. 
+                        The song, featuring Tyler, The Creator and Steve Lacy, humorously depicts a house party scenario in the first half, with Syd and Tyler persuading a girl to return to their places. 
+                        The second half explores the captivating trap of love set by the girl. 
+                        The song leaves a lasting impression with its mish-mash of initially upbeat vocals with a slower, lush composition in the later parts.
+                     </p>
+                </div>
+            </div>
+            <!-- spotlight -->
+            
+            <h2 class="dark-palette">Company Values</h2>
+        
+            <h3 class="values">1. Innovation</h3>
+            <p>We strive to push the boundaries of technology and design, creating a unique and forward-thinking music experience.</p>
+
+            <h3 class="values">2. Passion for Music</h3>
+            <p>We are deeply passionate about music and committed to supporting artists and fans alike.</p>
+
+            <h3 class="values">3. User-Centric Design</h3>
+            <p>We prioritize our users' needs and experiences, constantly seeking feedback and making improvements.</p>
+
+            <h3 class="values">4. Diversity and Inclusion</h3>
+            <p>We celebrate all genres of music and aim to represent artists from diverse backgrounds and cultures.</p>
+
+            <h3 class="values">5. Integrity</h3>
+            <p>We operate with transparency and honesty, building trust with our users and partners.</p>
+
+            <h3 class="values">6. Collaboration</h3>
+            <p>We believe in the power of collaboration, both within our team and with our users and artists.</p>  
+
+            <h3 class="values">7. Continuous Learning</h3>
+            <p>We are committed to learning and growing, staying on top of the latest trends in music and technology.</p>
+
+            <h3 class="values">8. Sustainability</h3>
+            <p>We are mindful of our impact on the environment and strive to make sustainable choices in our operations.</p>
+            <!-- values -->
+            
+
+            <h2 class="dark-palette">Future Goals</h2>
+
+            <div id="big-reviews-container3">
+                <div class="small-reviews-containers">
+                    <h3>Cross-App Integrations</h3>
+                    <img class="home-page-image2" src="img/cross-app-integrations.jpg" alt="Cross App Integrations">
+                    <p>
+                        We would like to develop a unified music discovery feature that allows users to pull song recommendations 
+                        from all linked music platforms like Spotify and SoundCloud, providing users with a diverse range of tailored music suggestions to create a seamless music listening experience.
+                        It would also give users the flexibility to mix and match songs, expanding their music discovery possibilities.
+                    </p>
+                </div>
+
+                <div class="small-reviews-containers">
+                    <h3>Expanding Community Features</h3>
+                    <img class="home-page-image2" src="img/community-features.jpg" alt="Community Features">
+                    <p>
+                        We also would like to create a feature that allows artists to share updates, behind-the-scenes content, and interact with fans directly on the app. 
+                        This could include live chats during performances, Q&A sessions, or even virtual meet-and-greets.
+                        There are plans in the works to make a social media app (MUZE) that would allow users to interact with one another as an interwoven community.
+                    </p>
+                </div>
+
+                <div class="small-reviews-containers">
+                    <h3>Multiplatform Accessibility</h3>
+                    <img class="home-page-image2" src="img/accessibility.webp" alt="Accessibility Features">
+                    <p>
+                        Lastly, we aim to expand the app to other platforms such as iOS, Android, and smart TVs to reach a wider audience (coming soon with iFrames). 
+                        Additionally, we want to implement an offline mode that allows users to download songs and listen to them without an 
+                        internet connection, making the app more accessible and convenient for users with limited or intermittent
+                        internet access.
+                    </p>
+                </div>
+            </div>
+            <!-- features -->
+
+            <div>
+                <h2 id="subscription-form" class="dark-palette">Subscribe to Muzic</h2>
+                <form action="subscription.html">
+                    <div class="form-row">
+                        <div class="left-col">
+                            <label for="fName-id">First Name</label>
+                        </div>
+                        <input type="text" id="fName-id">
+                    </div>
+            
+                    <div class="form-row">
+                        <div class="left-col">
+                            <label for="lName-id">Last Name</label>
+                        </div>
+                        <input type="text" id="lName-id">
+                    </div>
+            
+                    <div class="form-row">
+                        <div class="left-col">
+                            <label for="email-id">Email</label>
+                        </div>
+                        <input type="email" id="email-id">
+                    </div>
+            
+                    <div class="form-row">
+                        <div class="left-col">
+                            <label for="phone-id">Phone</label>
+                        </div>
+                        <input type="tel" id="phone-id">
+                    </div>
+            
+                    <div class="form-row">
+                        <div class = "left-col">Do you have a Spotify&trade; account?</div>
+                        
+                        <div class="visibility">
+                            <label id="yes-account">
+                                <input type="radio" name="account">
+                                Yes
+                            </label>
+                            
+                            <label id="no-account"> 
+                                <input type="radio" name="account">
+                                No
+                            </label>
+                
+                            <label id="other-account"> 
+                                <input type="radio" name="account">
+                                Other
+                            </label>
+                        </div>
+                    </div>
+            
+                    <div class="form-row">
+                        <div class = "left-col">
+                            <label for="role-msg">If you selected other, write why</label>
+                        </div>
+                        <textarea id="role-msg" placeholder="Ex. deleted old account, don't use actively, etc"></textarea>
+                    </div>
+            
+                    <div class="form-row">
+                        <div class="left-col">
+                        Mailing Updates
+                        </div>
+            
+                        <div class="visibility">
+                        <label>
+                            <input type="checkbox">
+                            Spotlight
+                        </label>
+            
+                        <label>
+                            <input type="checkbox">
+                            Showcase
+                        </label>
+            
+                        <label>
+                            <input type="checkbox">
+                            Picks
+                        </label>
+                        </div>
+                    </div>
+            
+                    <div id="submit-or-clear" class="form-row">
+                        <button type="submit">Submit Form</button>
+                        <button type="reset">Clear Form</button>
+                    </div>
+            
+                </form>
+            </div>
+            <!-- form -->
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+        <script>
+            // attempt at trying to work in a disappearing radio option with jquery
+            // setInterval(function() {
+            //     console.log($('#other-account > input[type="radio"]').value)
+            // },  100)
+           
+
+            /*$('.form-row > div > label > input[type="radio"]').change(function(){
+                
+
+                
+                if ($('#other-account > input[type="radio"]').value=="on") {
+                    $('.form-row > div > #role-msg').show();
+                }
+                else {
+                    $('.form-row > div > #role-msg').hide();
+                }
+            });*/
+        </script>
+    
+        <!-- #main content -->
+    </body>
+</html>

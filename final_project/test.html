@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Showcase Page</title>
+
+        <meta charset="UTF-8">
+
+        <meta name="keywords" content="give some tags">
+
+        <meta name="description" 
+        content= "We also introduce users to discover new music daily with our ‘Showcase' feature. 
+        Name idea and concept is roughly inspired from ITP-310 classmate Melody Chou">
+
+        <link rel="stylesheet" href="main.css">
+
+        <style>
+            #header {
+                background-image: url(img/peach-pit-banner.jpg);
+                /* text-shadow: 0px 0px 10px darkslateblue; */
+            }
+
+
+            #wireframe-img {
+                width: auto;
+                height: 400px;
+                padding: 8px;
+            }
+
+            #big-reviews-container1 {
+                /* border-top: 5px solid #014421;
+                border-bottom: 5px solid #014421; */
+                display: flex;
+                width: 900px;
+                /* border-bottom: solid 5px #c297bb; */
+            }
+
+            #big-reviews-container2 {
+                display: flex;
+                width: 900px;
+                /* border-bottom: 5px solid #014421; */
+            }
+            
+            .small-reviews-containers {
+                display:flex;
+                flex-wrap:wrap;
+                
+                width: 300px;
+                height: auto;
+
+                color: #014421;
+                /* font-weight: bold; */
+                background-color: lightyellow;
+                padding: 15px;
+            }
+
+            #home-page-image1,
+            #home-page-image3,
+            #home-page-image4,
+            #home-page-image5,
+            #home-page-image6 {
+                display: flex;
+				align-items: flex-start;
+
+				width: 240px;
+				height: 240px;
+				padding: 10px;
+            }
+
+            #home-page-image2 {
+                display: flex;
+				align-items: flex-start;
+
+				width: 240px;
+				height: auto;
+				padding: 10px;
+            }
+            
+
+            .float-left {
+                float: left;
+                width: 280px;
+                height: auto;
+                padding: 10px;
+            }
+
+            .float-right {
+                float: right;
+                width: 240px;
+                height: auto;
+                padding: 10px;
+            }
+/* 
+            .image-block {
+                margin-top: 10px;
+                margin-bottom: 10px;
+            } */
+            
+            /* .image-block > .captions {
+                text-align: center;
+                visibility: hidden;
+            }
+
+            .image-block:hover + .captions {
+                visibility: visible;
+            } */
+
+
+            .container {
+            display: flex;
+            }
+
+            .images1,
+            .images2 {
+                flex: 25%;
+            }
+
+            .text1,
+            .text2 {
+                flex: 25%;
+            }
+            img {
+                width: 90%;
+                height: auto;
+            }
+        </style>
+    </head>
+
+    <body>
+        
+        <div id="header" class="light-pink-palette">
+            <h1>Peach Pit</h1>
+        </div>
+
+        <div id="main-content">
+
+            <h2 id="review-section" class="dark-palette">Discography</h2>
+
+            <div class="container">
+                <div class="images1">
+                    <img src="img/audio.jpg" alt="Image 1">
+                    <img src="img/be-sweet-jb.jpg" alt="Image 2">
+                    <img src="img/borombon-cover.jpg" alt="Image 3">
+                </div>
+                <div class="text1">
+                    <p>Text corresponding to Image 1</p>
+                    <p>Text corresponding to Image 2</p>
+                    <p>Text corresponding to Image 3</p>
+                </div>
+                <div class="images2">
+                    <img src="img/audio.jpg" alt="Image 1">
+                    <img src="img/be-sweet-jb.jpg" alt="Image 2">
+                    <img src="img/borombon-cover.jpg" alt="Image 3">
+                </div>
+                <div class="text2">
+                    <p>Text corresponding to Image 1</p>
+                    <p>Text corresponding to Image 2</p>
+                    <p>Text corresponding to Image 3</p>
+                </div>
+            </div>
+
+        </div>
+    </body>
+</html>
